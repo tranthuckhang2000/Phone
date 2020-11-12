@@ -322,7 +322,10 @@ ul.multi-column-dropdown li a:hover {
 /*-- banner --*/
 
 /*-- carousel-slider --*/
-
+.img-size-pro{
+    width: 200px;
+    height: 200px;
+}
 .carousel-item.item1 {
     background: url(../images/banner/bIphone12.jpg) no-repeat center;
     background-size: cover;
@@ -1331,7 +1334,7 @@ h2.footer-top-head-w3l {
 }
 
 .page-head_agile_info_w3l-2 {
-    background: url(../images/b3.jpg) no-repeat center;
+    background: url(../images/bg.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
