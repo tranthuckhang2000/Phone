@@ -471,7 +471,7 @@ h3.tittle-w3l span {
 .snipcart-details input.button {
     font-size: 13px;
     color: #fff;
-    background: #0879c9;
+    background: #d70018;
     text-decoration: none;
     border: none;
     border-radius: 0;
@@ -503,7 +503,6 @@ h3.tittle-w3l span {
     padding: .5em 2.5em .5em 1em;
     border: 1px solid #fe9126;
     margin: .35em 0 0;
-    background: url(../images/cart.png) no-repeat 116px 9px;
 }
 
 #PPminicarts form {
@@ -1547,8 +1546,11 @@ li.subitem1 p {
     
 
 }
+.col-xl-7 h5 {
+    color: #d70018;
+}
 .single-infoagile11 h5 {
-    color: #00ACEE;
+    color: #d70018;
     padding: 7px;
 }
 .single-infoagile11 input {
@@ -1560,8 +1562,8 @@ li.subitem1 p {
    
 }
 .product-single-w3l {
-    border-top: 1px solid #0879c9;
-    border: #008877 1px solid;
+    border-top: 1px solid #ac5005;
+    border: #ac5005 1px solid;
     border-radius: 10px ;
     position: relative;
    display: block;
@@ -1575,14 +1577,14 @@ li.subitem1 p {
     top: -13px;
     left: 10px;
     vertical-align: middle;
-    background-color: #00ACEE;
+    background-color: #d70018;
     border-radius: 5px;
     width: 100px;
 
 }
 
 .product-single-w3l p i {
-    color: #0879c9;
+    color: #d70018;
     font-size: 24px;
 
 }
@@ -1746,7 +1748,7 @@ td.invert-image a img {
 /*-- checkout form --*/
 
 .address_form_agile h4 {
-    color: #0879c9;
+    color: #d70018;
     font-size: 24px;
     letter-spacing: 1px;
 }
@@ -1769,7 +1771,7 @@ td.invert-image a img {
 button.submit.check_out {
     padding: 12px 25px;
     letter-spacing: 1px;
-    background: #0879c9;
+    background: #d70018;
     font-size: 16px;
     color: #fff;
     border: none;
@@ -1853,7 +1855,7 @@ button.submit.check_out:hover {
     position: relative;
     padding: 6px 50px 11px;
     letter-spacing: 3px;
-    background: #0879c9;
+    background: #d70018;
     font-size: 1.5em;
     color: #fff;
     border: 1px solid #0879c9;
@@ -3279,6 +3281,13 @@ div#testimonials h4.m-title {
     border-spacing: 0;
     background-color: transparent;
 }
+.lt-table-box table tr {
+    border-bottom: 1px solid #d9d9d9 ;
+    font-size: 14px;
+}
+.lt-table-box td{
+    padding-right: 10px;
+}
 
 .fs-dtrt-row {
     display: table;
@@ -3334,7 +3343,7 @@ ul {
 }
 .fs-dtrt-c2 .progress{
     display: block;
-    background-color: #00ACEE;
+    background-color: #ac5005;
     width: 90%;
    margin: 5px;
 }
@@ -3345,8 +3354,8 @@ ul {
     width: 100%;
     background-color:rgba(253, 253, 253, 0.829);
     text-align: center;
-    color: rgb(119, 172, 241);
-    border: solid 1px #5eb2c7
+    color: #d70018;
+    border: solid 1px #ac5005 ;
 }
 .fs-dtrtbtnnx span {
     cursor: pointer;
@@ -3354,10 +3363,13 @@ ul {
     line-height: 34px;
     padding: 9px 35px;
     color: #fff;
-    background: #02a0d0;
+    background: #d70018;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
 }
 
 /*--//responsive--*/
+
+
+
