@@ -1079,7 +1079,7 @@ h2.footer-top-head-w3l {
 .icon-fot i {
     font-size: 41px;
     line-height: 1.4;
-    color: #0879c9;
+    color: #ac5005;
 }
 
 .text-form-footer {
@@ -1272,7 +1272,7 @@ h2.footer-top-head-w3l {
 /*-- copyright --*/
 
 .copy-right {
-    background: #0879c9;
+    background: #d70018;
 }
 
 .copy-right p {
@@ -1546,11 +1546,8 @@ li.subitem1 p {
     
 
 }
-.col-xl-7 h5 {
-    color: #d70018;
-}
 .single-infoagile11 h5 {
-    color: #d70018;
+    color:#d70018;
     padding: 7px;
 }
 .single-infoagile11 input {
@@ -1562,7 +1559,7 @@ li.subitem1 p {
    
 }
 .product-single-w3l {
-    border-top: 1px solid #ac5005;
+    border-top: 1px solid #0879c9;
     border: #ac5005 1px solid;
     border-radius: 10px ;
     position: relative;
@@ -1609,6 +1606,10 @@ li.subitem1 p {
     width: 38%;
     margin: 0;
 
+}
+/* bo sung  */
+.col-xl-7{
+    color: #d70018;
 }
 
 /*-- //single-page --*/
@@ -3368,8 +3369,22 @@ ul {
     -moz-border-radius: 2px;
     border-radius: 2px;
 }
+<<<<<<< Updated upstream
 
 /*--//responsive--*/
 
 
 
+=======
+.thumb{
+    /*position: relative;
+    display: block;*/
+      /*width: 200px;*/
+      height: 300px;
+      background-color: #3e3e3e;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+  }
+>>>>>>> Stashed changes
