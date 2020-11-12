@@ -3276,6 +3276,13 @@ div#testimonials h4.m-title {
     border-spacing: 0;
     background-color: transparent;
 }
+.lt-table-box table tr {
+    border-bottom: 1px solid #d9d9d9 ;
+    font-size: 14px;
+}
+.lt-table-box td{
+    padding-right: 10px;
+}
 
 .fs-dtrt-row {
     display: table;
@@ -3355,5 +3362,4 @@ ul {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-
-/*--//responsive--*/
+}
