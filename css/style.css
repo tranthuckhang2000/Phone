@@ -220,7 +220,7 @@ input[type="submit"] {
 /*-- logo --*/
 
 .logo_agile h1 a {
-    color: #F45C5D;
+    color: #d70018;
     font-size: 38px;
     text-decoration: none;
     letter-spacing: 1px;
@@ -391,7 +391,7 @@ ul.multi-column-dropdown li a:hover {
 .carousel-caption h2 span,
 .carousel-caption h3 span {
     font-weight: 800;
-    color: #F45C5D;
+    color: #d70018;
 }
 
 .carousel-caption p {
@@ -969,6 +969,7 @@ h3.heading-tittle {
 span.item_price {
     font-size: 18px;
     color: #d60404;
+    /*margin-top: 100px;*/
 }
 
 .info-product-price del {
@@ -1510,7 +1511,7 @@ li.subitem1 p {
     box-sizing: border-box;
     width: 100%;
 
-    
+
 }
 .single-infoagile label{
     position: relative;
@@ -1534,7 +1535,7 @@ li.subitem1 p {
     width: 100%;
     margin-top: 20px;
 
-    
+
 }
 .single-infoagile11 label{
     position: relative;
@@ -1543,7 +1544,7 @@ li.subitem1 p {
     width: 25%;
     height: 40px;
     padding-top: 5px;
-    
+
 
 }
 .single-infoagile11 h5 {
@@ -1554,9 +1555,9 @@ li.subitem1 p {
     position: absolute;
     top: 8px;
     left: 5px;
-  
 
-   
+
+
 }
 .product-single-w3l {
     border-top: 1px solid #0879c9;
@@ -1566,7 +1567,7 @@ li.subitem1 p {
    display: block;
    padding-top: 10px;
    margin-top: 80px;
-  
+
 }
 .product-single-w3l b i {
     color: white;
@@ -1591,7 +1592,7 @@ li.subitem1 p {
     letter-spacing: 0.5px;
 }
 .product-single-w3l ul {
-    
+
 
 }
 .product-single-w3l li{
@@ -1599,7 +1600,7 @@ li.subitem1 p {
     font-size: 14px;
     line-height: 1.7;
     padding-left: 3px;
-   
+
 }
 
 .occasion-cart .snipcart-details {
@@ -2271,19 +2272,19 @@ div#testimonials h4.m-title {
 	display: inherit;
 }
 
-/*-- placeholder-color 
+/*-- placeholder-color
 
 ::-webkit-input-placeholder {
     color: #fff;
 }
 
 :-moz-placeholder {
-    /* Firefox 18- 
+    /* Firefox 18-
     color: #fff;
 }
 
 ::-moz-placeholder {
-    /* Firefox 19+ 
+    /* Firefox 19+
     color: #fff;
 }
 
@@ -2315,7 +2316,9 @@ div#testimonials h4.m-title {
         padding: 26px 0 21px 42px;
     }
     .logo_agile h1 a img {
-        left: -34%;
+        left: -37%;
+        width: 27%;
+        top: -4px;
     }
 }
 
@@ -2493,6 +2496,7 @@ div#testimonials h4.m-title {
     .button2 {
         padding: 11px 20px;
         font-size: 14px;
+        background-color: #d70018;
     }
     .carousel-item.item4,
     .carousel-item.item3,
@@ -3253,7 +3257,7 @@ div#testimonials h4.m-title {
     ul.multi-column-dropdown li a {
         font-size: 13px;
     }
-    .occasion-cart .snipcart-details {
+    .occccasion-cart .snipcart-details {
         width: 45%;
     }
 }
