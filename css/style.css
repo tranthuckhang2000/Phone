@@ -3277,7 +3277,7 @@ div#testimonials h4.m-title {
 
 }
 .lt-table-box .content {
-    padding: 10px;
+    padding: 0;
 
 }
 .lt-table-box table {
@@ -3287,11 +3287,13 @@ div#testimonials h4.m-title {
     background-color: transparent;
 }
 .lt-table-box table tr {
-    border-bottom: 1px solid #d9d9d9 ;
+    border-top: 1px solid #d9d9d9 ;
     font-size: 14px;
+   
 }
 .lt-table-box td{
-    padding-right: 10px;
+   
+    padding: 5px 20px;
 }
 
 .fs-dtrt-row {
@@ -3300,6 +3302,7 @@ div#testimonials h4.m-title {
     border: 1px solid #d8d8d8;
     margin-bottom: 20px;
     margin: 15px;
+   
 }
 .fs-dtrt-c1 {
     width: 193px;
@@ -3319,8 +3322,8 @@ div#testimonials h4.m-title {
     margin-bottom: 8px;
 }
 .fs-dtrt-c2 {
-    padding: 15px;
-    width: 260px;
+    /* padding: 15px; */
+    width: 300px;
     border-right: 1px solid #d8d8d8;
     color: white;
 
@@ -3352,9 +3355,39 @@ ul {
     width: 90%;
    margin: 5px;
 }
-.fs-dtrt-c2 .progress .progress-bar{
-    width: 50%;
-}
+
+.skills .progress {
+    height: 40px;
+    display: block;
+    background: none;
+  }
+  
+  .skills .progress .skill {
+   
+    margin: 0px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 50px;
+    font-family: "Poppins", sans-serif;
+    color: #384046;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: #e8eaec;
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #ac5005;
+  }
+  
 .buttontable {
     width: 100%;
     background-color:rgba(253, 253, 253, 0.829);
@@ -3364,9 +3397,9 @@ ul {
 }
 .fs-dtrtbtnnx span {
     cursor: pointer;
-    height: 34px;
+    height: 20px;
     line-height: 34px;
-    padding: 9px 35px;
+    padding: 9px 20px;
     color: #fff;
     background: #d70018;
     -webkit-border-radius: 2px;
@@ -3572,6 +3605,14 @@ ul {
       padding-top: 15px;
       padding-right: 15px;
   }
+  /* bo sung san phâm */
+  .aos-animate img {
+      max-width: 600px;
+  }
+  #more {
+      display: none;
+  }
+
  
 /*--//responsive--*/
 
