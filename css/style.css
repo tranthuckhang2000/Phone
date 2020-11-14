@@ -87,6 +87,9 @@ label {
     letter-spacing: 1px;
     font-size: 15px;
 }
+.color-log{
+    color: #FFFFFF;
+}
 
 /*-- header Lists --*/
 
@@ -213,7 +216,9 @@ input[type="submit"] {
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
     padding: 10px;
 }
-
+.agileits_search button:hover {
+    background-color: #f45c5d;
+}
 
 /*-- //search --*/
 
@@ -252,6 +257,10 @@ button.w3view-cart {
     height: 44px;
     background: #d70018;
     border: 1px solid rgba(27, 25, 25, 0.27);
+}
+
+button.w3view-cart:hover {
+    background-color: #f45c5d;
 }
 
 /*-- //header cart button --*/
@@ -421,7 +430,7 @@ ul.multi-column-dropdown li a:hover {
 
 .button2 {
     display: inline-block;
-    background: #0879c9;
+    background: #d70018;
     border-radius: 4px;
     color: #fff;
     letter-spacing: 2px;
@@ -430,7 +439,7 @@ ul.multi-column-dropdown li a:hover {
 
 .button2:hover,
 .button2:focus {
-    background: #F45C5D;
+    background: #f45c5d;
     color: #fff;
 }
 
@@ -1222,8 +1231,8 @@ h2.footer-top-head-w3l {
     color: #FFFFFF;
     padding: 10px;
     letter-spacing: 1px;
-    width: 18%;
-    background: #f45c5d;
+    width: 26%;
+    background: #d70018;
     border: none;
 	cursor: pointer;
     -webkit-transition: 0.5s all;
@@ -1234,7 +1243,7 @@ h2.footer-top-head-w3l {
 }
 
 .w3l-agileits input[type="submit"]:hover {
-    background: #0879c9;
+    background: #f45c5d;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1851,6 +1860,10 @@ button.submit.check_out:hover {
     border-color: #66afe9;
     outline: 0;
 } */
+
+.tt{
+    color: #d70018;
+}
 
 .agileits_w3layouts_tab2 input[type="submit"] {
     display: block;
@@ -2497,6 +2510,9 @@ div#testimonials h4.m-title {
         padding: 11px 20px;
         font-size: 14px;
         background-color: #d70018;
+    }
+    .button2:hover {
+        background-color: #f45c5d;
     }
     .carousel-item.item4,
     .carousel-item.item3,
@@ -3289,10 +3305,10 @@ div#testimonials h4.m-title {
 .lt-table-box table tr {
     border-top: 1px solid #d9d9d9 ;
     font-size: 14px;
-   
+
 }
 .lt-table-box td{
-   
+
     padding: 5px 20px;
 }
 
@@ -3302,7 +3318,7 @@ div#testimonials h4.m-title {
     border: 1px solid #d8d8d8;
     margin-bottom: 20px;
     margin: 15px;
-   
+
 }
 .fs-dtrt-c1 {
     width: 193px;
@@ -3361,33 +3377,33 @@ ul {
     display: block;
     background: none;
   }
-  
+
   .skills .progress .skill {
-   
+
     margin: 0px;
     text-transform: uppercase;
     display: block;
-    font-weight: 50px;
+
     font-family: "Poppins", sans-serif;
     color: #384046;
   }
-  
+
   .skills .progress .skill .val {
     float: right;
     font-style: normal;
   }
-  
+
   .skills .progress-bar-wrap {
     background: #e8eaec;
   }
-  
+
   .skills .progress-bar {
     width: 1px;
     height: 10px;
     transition: .9s;
     background-color: #ac5005;
   }
-  
+
 .buttontable {
     width: 100%;
     background-color:rgba(253, 253, 253, 0.829);
@@ -3502,7 +3518,7 @@ ul {
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
-    
+
   }
   .form {
     position: relative;
@@ -3536,12 +3552,11 @@ ul {
     padding: 15px;
     color: #FFFFFF;
     font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
+
     cursor: pointer;
   }
   .form button:hover,.form button:active,.form button:focus {
-    background: #ac5005;
+    background: #f45c5d;
   }
   .form .message {
     margin: 15px 0 0;
@@ -3551,7 +3566,7 @@ ul {
   .form .message a {
     color: #ac5005;
     text-decoration: none;
-   
+
   }
   .form a {
       color: rgb(17, 121, 14);
@@ -3560,7 +3575,7 @@ ul {
   /* .form .register-form {
     display: none;
   } */
- 
+
 .login-page .container {
     position: relative;
     z-index: 1;
@@ -3606,7 +3621,7 @@ ul {
       padding-right: 15px;
 
   }
-  
+
   /* bo sung san phâm */
   .aos-animate img {
       max-width: 600px;
@@ -3615,7 +3630,7 @@ ul {
       display: none;
   }
 
- 
+
 /*--//responsive--*/
 
 
