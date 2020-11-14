@@ -1643,7 +1643,7 @@ table.timetable_sub {
 
 .timetable_sub td {
     text-align: center;
-    padding: 7px;
+    /* padding: 7px; */
     font-size: 14px;
     color: #212121;
 }
@@ -1669,7 +1669,7 @@ td.invert-image a img {
     width: 28px;
     height: 28px;
     position: absolute;
-    right: 15px;
+    /* right: 15px; */
     top: -13px;
     -webkit-transition: color 0.2s ease-in-out;
     -moz-transition: color 0.2s ease-in-out;
@@ -3604,7 +3604,9 @@ ul {
       margin: auto;
       padding-top: 15px;
       padding-right: 15px;
+
   }
+  
   /* bo sung san phâm */
   .aos-animate img {
       max-width: 600px;
