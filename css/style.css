@@ -1388,7 +1388,7 @@ ul.w3_short {
 /*-- faq-page --*/
 
 h3.w3-head {
-    color: #f45c5d;
+    color: #d70018;
     font-size: 28px;
     letter-spacing: 1px;
 }
@@ -1434,7 +1434,7 @@ li.subitem1 p {
 .wthree-help form input[type="submit"] {
     font-size: 16px;
     color: #fff;
-    background: #F45C5D;
+    background: #d70018;
     outline: none;
     border: none;
     cursor: pointer;
@@ -1463,7 +1463,7 @@ li.subitem1 p {
 .wthree-help a {
     color: #fff;
     padding: 10px 20px;
-    background: #0879c9;
+    background: #d70018;
 }
 
 /*-- //help page --*/
