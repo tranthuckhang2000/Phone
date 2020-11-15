@@ -8,8 +8,9 @@ p {
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 1px;
+
     display: inline-block;
-    padding: 13px 52px;
+    padding: 13px 44px;
     margin: 0 17px 0 0;
     list-style: none;
     cursor: pointer;
@@ -78,7 +79,7 @@ h2.resp-accordion {
 
 .resp-tab-active {
     border-bottom: none;
-    background-color: #0879c9 !important;
+    background-color: #d70018 !important;
     color: #fff;
 }
 

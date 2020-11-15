@@ -54,7 +54,7 @@
 .creditly-card-form .submit span {
 	padding: 12px 25px;
 	letter-spacing: 1px;
-	background: #F45C5D;
+	background: #d70018;
 	font-size: 16px;
 	color: #fff;
 	border: none;
@@ -68,7 +68,7 @@
 }
 
 .creditly-card-form .submit span:hover {
-	background: #0879c9;
+	background: #f45c5d;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
