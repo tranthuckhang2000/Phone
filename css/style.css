@@ -3656,7 +3656,20 @@ ul {
   #more {
       display: none;
   }
+/* <<<<<<< Updated upstream
 
+
+======= */
+/* //bo sung list san pham */
+#row-centermacbook .pt-1 {
+    overflow: hidden;
+    height: 60px;
+    padding: 2px;
+}
+#row-centermacbook .my-2{
+    overflow: hidden;
+    height: 50px;
+}
 
 /*--//responsive--*/
 
