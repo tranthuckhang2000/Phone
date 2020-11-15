@@ -884,7 +884,9 @@ readers do not read off random characters that represent icons */
   content: "\f155"; }
 
 .fa-dolly:before {
-  content: "\f472"; }
+  content: "\f472";
+  color: #d70018;
+}
 
 .fa-dolly-flatbed:before {
   content: "\f474"; }
@@ -2060,7 +2062,8 @@ readers do not read off random characters that represent icons */
   content: "\f21a"; }
 
 .fa-shipping-fast:before {
-  content: "\f48b"; }
+  content: "\f48b";
+color: #d70018}
 
 .fa-shirtsinbulk:before {
   content: "\f214"; }
@@ -2360,7 +2363,8 @@ readers do not read off random characters that represent icons */
   content: "\f165"; }
 
 .fa-thumbs-up:before {
-  content: "\f164"; }
+  content: "\f164";
+color: #d70018}
 
 .fa-thumbtack:before {
   content: "\f08d"; }
