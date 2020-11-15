@@ -1617,9 +1617,36 @@ li.subitem1 p {
     margin: 0;
 
 }
+.width-ck{
+    padding: 13px 21.6px;
+}
 /* bo sung  */
 .col-xl-7{
     color: #d70018;
+}
+.btn-pay{
+    padding: 12px 25px;
+    letter-spacing: 1px;
+    background: #d70018;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    display: inline-block;
+}
+.btn-pay:active{
+
+    background: #f45c5d;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
 }
 
 /*-- //single-page --*/
@@ -1629,7 +1656,7 @@ li.subitem1 p {
 /*-- checkout --*/
 
 .checkout-right h4 {
-    color: #F45C5D;
+    color: #000000;
     font-size: 26px;
     letter-spacing: 1px;
 }
@@ -1640,7 +1667,7 @@ table.timetable_sub {
 }
 
 .timetable_sub th {
-    background: #000;
+    background: #d70018;
     color: #fff;
     font-size: 16px;
     border-right: 1px solid #ded2d2;
@@ -1678,7 +1705,7 @@ td.invert-image a img {
     width: 28px;
     height: 28px;
     position: absolute;
-    /* right: 15px; */
+     right: 6px;
     top: -13px;
     -webkit-transition: color 0.2s ease-in-out;
     -moz-transition: color 0.2s ease-in-out;
@@ -1958,7 +1985,7 @@ img.pp-img {
 }
 
 a.btn.btn-primary {
-    background-color: #3a5795;
+    background-color: #d70018;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     border: none;
@@ -2044,7 +2071,7 @@ select.form-control.option-w3ls {
 
 .vertical_post form input[type="submit"],
 .number-paymk input[type="submit"] {
-    background: #0879c9;
+    background: #d70018;
     color: #FFFFFF;
     text-align: center;
     padding: 11px 19px;
