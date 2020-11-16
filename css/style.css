@@ -3551,7 +3551,7 @@ ul {
     position: relative;
     z-index: 1;
     background-color: white;
-    max-width: 360px;
+    max-width: 600px;
     margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
@@ -3671,6 +3671,38 @@ ul {
     height: 50px;
 }
 
+.modifyuser {
+    border: solid 1px #acacac;
+    width: 60%;
+    margin:auto ;
+    padding: 10px;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 20px 0 rgba(148, 73, 12, 0.568), 0 5px 5px 0 rgba(253, 117, 27, 0.2);
+
+
+}
+
+.modifyuser h6 {
+    font-size: 17px;
+    padding: 5px;
+    text-align: center;
+}
+.modifyuser .indexmodify{
+    background-color: #ee894e50;
+   text-align: left;
+    
+}
+.modifyuser button {
+border: solid 1px #d70018;
+border-radius: 10px;
+background-color: white;
+}
+.modifyuser input{
+    margin: 10px;
+    width: 60%;
+}
 /*--//responsive--*/
 
 
