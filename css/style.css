@@ -3375,9 +3375,25 @@ ul {
     list-style: none;
 }
 .fs-dtrt-c3 {
-    padding: 15px;
+    padding: 5px;
     text-align: center;
 
+
+}
+.fs-dtrt-c3 input {
+   margin-bottom: 5px;
+  
+}
+.fs-dtrt-c3 textarea {
+    margin-bottom: 5px;
+}
+.fs-dtrt-c3 .submitbt {
+    background-color: #d70018;
+    color: white;
+    border-radius: 3px;
+    float: right;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.45);
+    border: none;
 }
 .fs-dtrt-c1 .fs-dtrtbig li{
     color: yellow;
@@ -3389,9 +3405,7 @@ ul {
 .fs-dtrt-c1 .fs-dtrtbig i {
     size: 30px;
 }
-.fs-dtrt-c3 h5 {
-    padding: 5px;
-}
+
 .fs-dtrt-c2 .progress{
     display: block;
     background-color: #ac5005;
@@ -3448,7 +3462,30 @@ ul {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+
 }
+.danhgiasanpham {
+   display: block;
+   max-height:400px ;
+}
+.danhgiasanpham h5 {
+    color:#d70018;
+    padding-bottom:30px ;
+}
+.thongtinkhachhang {
+    display: grid;
+    width: 1100px;
+    grid-template-rows: auto auto auto;
+    border-bottom: 1px #acacac solid;
+
+}
+.thongtinkhachhang  li{
+    color: yellow;
+    float: left;
+    padding-left: 20px;
+
+}
+
 /* login register */
 
 .panel-login>.panel-heading {
@@ -3661,12 +3698,12 @@ ul {
 
 ======= */
 /* //bo sung list san pham */
-#row-centermacbook .pt-1 {
+.pt-1 {
     overflow: hidden;
     height: 60px;
     padding: 2px;
 }
-#row-centermacbook .my-2{
+ .my-2{
     overflow: hidden;
     height: 50px;
 }
