@@ -771,6 +771,8 @@ h3.tittle-w3l span {
     width: 260px;
 }
 
+
+
 #custom-search-input {
     padding: 3px;
     border: solid 1px #D1E0EE;
@@ -1892,6 +1894,14 @@ button.submit.check_out:hover {
     color: #d70018;
 }
 
+#color-text-background{
+    color: #FFFFFF;
+    background-color: #d70018;
+}
+.modal-title-pro{
+    font-size: 30px;
+    color: #d70018;
+}
 .agileits_w3layouts_tab2 input[type="submit"] {
     display: block;
     position: relative;
