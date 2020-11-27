@@ -13,7 +13,8 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: unset;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -59,10 +60,54 @@ template {
 a {
   background-color: transparent;
 }
+ul.w3_short li a {
+  color: #F45C5D;
+  text-decoration: none;
+  font-weight: unset;
+}
+.agileits_search button {
+  border-radius: 0;
+  background: #d70018;
+  color: #fff;
+  width: 20%;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
+  padding: 10px;
+  margin: 0;
+  font-weight: unset;
+}
+.services-breadcrumb {
+  margin-top: -17px;
+  padding: 0;
+  background: #eee;
+  text-align: center;
+}
+.agileits_search button {
+  border-radius: 0;
+  background: #d70018;
+  color: #fff;
+  width: 20%;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
+  padding: 10px;
+  font-weight: unset;
+}
+
+.agileits_search input[type="search"] {
+  color: #191e21;
+  width: 78%;
+  letter-spacing: 1px;
+  padding: 10px;
+  font-weight: unset;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
+}
 
 a:active,
 a:hover {
   outline: 0;
+}
+
+.header-right ul li a {
+  text-decoration: none;
+  font-weight: unset;
 }
 
 abbr[title] {
@@ -217,6 +262,13 @@ textarea {
 
 optgroup {
   font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #000;
+  font-weight: unset;
 }
 
 table {
@@ -7399,6 +7451,7 @@ webkit-selection {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
 #fh5co-offcanvass ul {
   padding: 0;
   margin: 0 0 30px 0;
@@ -7737,22 +7790,32 @@ pre {
 /* Buttons */
 .btn {
   border-bottom: none !important;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  /*letter-spacing: 2px;*/
   margin-bottom: 20px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-right: 10px;
+  /*padding-left: 20px;*/
+  /*padding-right: 20px;*/
+  border-radius: 0;
+  background: #d70018;
+  color: #fff;
+  width: 20%;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.22);
+  padding: 10px;
+  margin-right: 50px;
+  font-weight: unset;
+  overflow: hidden;
+  height: 50px;
+  display: inline-block;
 }
 .btn:hover, .btn:focus, .btn:active {
   box-shadow: none;
   outline: none !important;
   border-color: transparent;
+  color: white;
 }
 .btn.fh5co-btn-icon {
   text-transform: none !important;
