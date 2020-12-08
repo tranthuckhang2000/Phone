@@ -11,13 +11,13 @@
     <meta name="description"
           content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
-    <title>Quản Lý Thành Viên</title>
+    <title>Quản Lí Tin Tức</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
     <!-- Favicon icon -->
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,11 +42,7 @@
     </script>
     <!-- //Meta tag Keywords -->
 
-    <!-- Custom-Filesa
-
-     [class]="expression"
-
-     [class]="[class]="expression""-->
+    <!-- Custom-Files -->
     <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Bootstrap css -->
     <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -66,51 +62,7 @@
     <!-- //web fonts -->
 
 </head>
-
 <body>
-<!-- add account -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title-pro">Thêm Thành Viên</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label class="col-form-label">Tên Đầy Đủ</label>
-                        <input type="text" class="form-control" placeholder=" " name="Name" required="">
-                    </div>
-                    <div class="form-group">
-                        <label class="col-form-label">Tài Khoản</label>
-                        <input type="text" class="form-control" placeholder=" " name="Username" required="">
-                    </div>
-                    <div class="form-group">
-                        <label class="col-form-label">Mật Khẩu</label>
-                        <input type="text" class="form-control" placeholder=" " name="Pass" required="">
-                    </div>
-                    <div class="form-group">
-                        <label class="col-form-label">Giới Tính</label>
-                        <input type="text" class="form-control" placeholder=" " name="Sex" required="">
-                    </div>
-                    <div class="form-group">
-                        <label class="col-form-label">Chức vụ</label>
-                        <input type="text" class="form-control" placeholder=" " name="Role" required="">
-                    </div>
-                    <div class="btn-sum">
-                        <input  type="submit" class="form-control-pro" value="Thêm Thành Viên Mới">
-                    </div>
-
-
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- // add account -->
 <!-- ============================================================== -->
 <!-- Preloader - style you can find in spinners.css -->
 <!-- ============================================================== -->
@@ -120,6 +72,47 @@
         <div class="lds-pos"></div>
     </div>
 </div>
+
+<!-- add product -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title-pro">Thêm Sản Phẩm</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label class="col-form-label">Tên Sản Phẩm</label>
+                        <input type="text" class="form-control" placeholder=" " name="Name" required="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Số Lượng</label>
+                        <input type="number" class="form-control" placeholder=" " name="Amount" required="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Giá Bán</label>
+                        <input type="number" class="form-control" placeholder=" " name="Price" required="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Chọn Ảnh Mô Tả: </label>
+                        <input class="upload-file" type="file"  id="myFile" name="filename">
+                    </div>
+                    <div class="btn-sum">
+                        <input  type="submit" class="form-control-pro" value="Thêm Vào Kho">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- // add product -->
+
 <!-- ============================================================== -->
 <!-- Main wrapper - style you can find in pages.scss -->
 <!-- ============================================================== -->
@@ -267,28 +260,25 @@
         </div>
         <!-- End Sidebar scroll-->
     </aside>
+
     <!-- ============================================================== -->
     <!-- End Left Sidebar - style you can find in sidebar.scss  -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
     <!-- Page wrapper  -->
     <!-- ============================================================== -->
-    <div class="page-wrapper">
+    <div class="page-wrapper" style="min-height: 250px;">
         <!-- ============================================================== -->
         <!-- Bread crumb and right sidebar toggle -->
         <!-- ============================================================== -->
         <div class="page-breadcrumb bg-white">
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title text-uppercase font-medium font-14">Thành Viên</h4>
+                    <h4 class="page-title text-uppercase font-medium font-14">Tin Tức</h4>
                 </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     <div class="d-md-flex">
-                        <ol class="breadcrumb ml-auto">
-                            <li><a href="#"></a></li>
-                        </ol>
-                        <a href="" target="_blank"
-                           class="btn btn-danger  d-none d-md-block pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">Cập Nhật</a>
+
                     </div>
                 </div>
             </div>
@@ -305,103 +295,100 @@
             <!-- Start Page Content -->
             <!-- ============================================================== -->
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-12">
                     <div class="white-box">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th class="border-top-0">STT</th>
-                                    <th class="border-top-0">Tên Đầy Đủ</th>
-                                    <th class="border-top-0">Giới Tính</th>
-                                    <th class="border-top-0">Tài Khoản</th>
-                                    <th class="border-top-0">Chức Vụ</th>
-                                    <th class="border-top-0">Xóa</th>
 
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr class="rem1">
-                                    <td>1</td>
-                                    <td>Trần Thúc Kháng</td>
-                                    <td>
-                                        <select class="text3e5569 p-0 border-0">
-                                            <option>Nam</option>
-                                            <option>Nữ</option>
-                                        </select>
-
-                                    </td>
-                                    <td>khangtran2000</td>
-                                    <td>
-                                        <select class="text3e5569 p-0 border-0">
-                                            <option>Quản Lý</option>
-                                            <option>Thành Viên</option>
-                                        </select>
-                                    </td>
-                                    <td class="invert">
-                                        <div class="rem mg-elm l-side">
-                                            <div class="close1"> </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="rem2">
-                                    <td>2</td>
-                                    <td>Mai Vân Anh</td>
-                                    <td>
-                                        <select class="text3e5569 p-0 border-0">
-                                            <option>Nữ</option>
-                                            <option>Nam</option>
-                                        </select>
-                                    </td>
-                                    <td>anhxinhgai</td>
-                                    <td>
-                                        <select class="text3e5569 p-0 border-0">
-                                            <option>Thành Viên</option>
-                                            <option>Quản Lý</option>
-                                        </select>
-                                    </td>
-                                    <td class="invert">
-                                        <div class="rem mg-elm l-side">
-                                            <div class="close2"> </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="rem3">
-                                    <td>3</td>
-                                    <td>Phạm Thanh Tú</td>
-                                    <td>
-                                        <select class="text3e5569 p-0 border-0">
-                                            <option>Nam</option>
-                                            <option>Nữ</option>
-                                        </select>
-                                    </td>
-                                    <td>tuxinhtrai</td>
-                                    <td>
-                                        <select class="text3e5569 p-0 border-0">
-                                            <option>Thành Viên</option>
-                                            <option>Quản Lý</option>
-                                        </select>
-                                    </td>
-                                    <td class="invert">
-                                        <div class="rem mg-elm l-side">
-                                            <div class="close3"></div>
-                                        </div>
-                                    </td>
-                                </tr>
+                        <form class="form-inline" action="#" method="post">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Tìm Kiếm..." aria-label="Search" required>
+                            <button class="btn-search my-2 my-sm-0 mg-e" type="submit">Tìm Kiếm</button>
+                        </form>
 
 
-                                </tbody>
-                            </table>
-                            <div class="mg-elm">
-                                <button class="btn-search my-2 my-sm-0 mg-e mg-elm" type="submit">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
-                                        Thêm Thành Viên</a>
-                                </button>
+                        <div class="checkout-right">
+
+                            <div class="table-responsive mg-elm">
+                                <table class="timetable_sub">
+                                    <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Ảnh Mô Tả</th>
+                                        <th>Tiêu Đề Bài Viết</th>
+                                        <th>Nội Dung</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="rem1">
+                                        <td class="invert">1</td>
+                                        <td class="invert-image">
+                                            <a href="product/iphone/single.html">
+                                                <img src="../news/images/tiktok.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">iphone 7 32GB Silver</td>
+                                        <td class="invert">iphone 7 32GB Silver
+                                            iphone 7 32GB Silver
+                                            iphone 7 32GB Silver
+                                            iphone 7 32GB Silver
+                                            iphone 7 32GB Silver
+                                            iphone 7 32GB Silver
+                                            iphone 7 32GB Silver   iphone 7 32GB Silver
+                                            iphone 7 32GB Silver
+
+                                            iphone 7 32GB Silver</td>
+                                    </tr>
+                                    <tr class="rem2">
+                                        <td class="invert">2</td>
+                                        <td class="invert-image">
+                                            <a href="single2.html">
+                                                <img src="../images/macbook/macbook13/macbook5.3.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">Macbook pro 13inch</td>
+                                        <td class="invert">Macbook pro 13inch
+                                            Macbook pro 13inch
+                                            Macbook pro 13inchMacbook pro 13inchMacbook pro 13inchMacbook pro 13inchMacbook pro 13inchMacbook pro 13inch
+                                            Macbook pro 13inch
+                                            Macbook pro 13inchQUẢN LÝ KHO HÀNG
+
+
+
+
+
+                                        </td>
+                                    </tr>
+                                    <tr class="rem3">
+                                        <td class="invert">3</td>
+                                        <td class="invert-image">
+                                            <a href="product/iphone/single.html">
+                                                <img src="../images/ipad/iPad%20Air%201%20Wifi%20Cellular/ipad-air-1-silver.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">ipad air 2</td>
+                                        <td class="invert">ipad air 2
+                                            ipad air 2
+                                            ipad air 2ipad air 2ipad air 2ipad air 2ipad air 2ipad air 2ipad air 2
+
+
+
+
+
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="mg-elm">
+                                    <button class="btn-search my-2 my-sm-0 mg-e mg-elm" type="submit">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
+                                            Thêm Sản Phẩm</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- ============================================================== -->
             <!-- End PAge Content -->
             <!-- ============================================================== -->
@@ -419,6 +406,7 @@
         <!-- ============================================================== -->
         <!-- footer -->
         <!-- ============================================================== -->
+
 
         <!-- ============================================================== -->
         <!-- End footer -->
@@ -576,15 +564,6 @@
         });
     });
 </script>
-<script>
-    $(document).ready(function (c) {
-        $('.close4').on('click', function (c) {
-            $('.rem4').fadeOut('slow', function (c) {
-                $('.rem4').remove();
-            });
-        });
-    });
-</script>
 <!-- //quantity -->
 
 <!-- smoothscroll -->
@@ -630,7 +609,5 @@
 <script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- //js-files -->
-<script src="js/custom.js"></script>
 </body>
-
 </html>

@@ -340,7 +340,10 @@ input[type="checkbox"] {
 .l-side{
   left: -15px;
 }
-
+.btn-danger{
+  margin-top: -33px;
+  margin-right: 22px;
+}
 
 .form-control-pro{
   display: block;
@@ -2528,16 +2531,23 @@ fieldset:disabled a.btn {
 
 .btn-danger {
   color: #fff;
-  background-color: #f62d51;
-  border-color: #f62d51; }
+  background-color: #d70018;
+  border-color: #d70018;
+  margin-bottom: -4px;
+  margin-top: -22px;
+}
+.invert-ct-news{
+  line-height: 5;
+}
+
   .btn-danger:hover {
     color: #fff;
     background-color: #f20a34;
     border-color: #e60a31; }
   .btn-danger:focus, .btn-danger.focus {
     color: #fff;
-    background-color: #f20a34;
-    border-color: #e60a31;
+    background-color: #f45c5d;
+    border-color: #f45c5d;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(247, 77, 107, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(247, 77, 107, 0.5); }
   .btn-danger.disabled, .btn-danger:disabled {
