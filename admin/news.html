@@ -11,7 +11,7 @@
     <meta name="description"
           content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
-    <title>Quản Lí Tin Tức</title>
+    <title>Quản Lý Tin Tức</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
     <!-- Favicon icon -->
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
@@ -24,6 +24,28 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Custom-Files -->
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Bootstrap css -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--     Main css-->
+    <link rel="stylesheet" href="../css/fontawesome-all.css">
+    <!--     Font-Awesome-Icons-CSS-->
+    <link href="../css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <!--     pop-up-box-->
+    <link href="../css/menu.css" rel="stylesheet" type="text/css" media="all" />
+    <!--     menu style-->
+
+    <!-- Custom CSS -->
+    <link href="plugins/bower_components/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
+    <!-- Custom CSS -->
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .checked {
@@ -78,7 +100,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title-pro">Thêm Sản Phẩm</h5>
+                <h5 class="modal-title-pro">Thêm Tin Tức</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -86,23 +108,23 @@
             <div class="modal-body">
                 <form action="#" method="post">
                     <div class="form-group">
-                        <label class="col-form-label">Tên Sản Phẩm</label>
+                        <label class="col-form-label">Tên Bài Viết</label>
                         <input type="text" class="form-control" placeholder=" " name="Name" required="">
                     </div>
                     <div class="form-group">
-                        <label class="col-form-label">Số Lượng</label>
-                        <input type="number" class="form-control" placeholder=" " name="Amount" required="">
+                        <label class="col-form-label">Tiêu Đề</label>
+                        <input type="number" class="form-control" placeholder=" " name="Tittle" required="">
                     </div>
                     <div class="form-group">
-                        <label class="col-form-label">Giá Bán</label>
-                        <input type="number" class="form-control" placeholder=" " name="Price" required="">
+                        <label class="col-form-label">Nội Dung</label>
+                        <input type="number" class="form-control" placeholder=" " name="Content" required="">
                     </div>
                     <div class="form-group">
-                        <label class="col-form-label">Chọn Ảnh Mô Tả: </label>
+                        <label class="col-form-label">Ảnh Mô Tả: </label>
                         <input class="upload-file" type="file"  id="myFile" name="filename">
                     </div>
                     <div class="btn-sum">
-                        <input  type="submit" class="form-control-pro" value="Thêm Vào Kho">
+                        <input  type="submit" class="form-control-pro" value="Thêm">
                     </div>
 
 
@@ -198,13 +220,14 @@
     <!-- Left Sidebar - style you can find in sidebar.scss  -->
     <!-- ============================================================== -->
     <aside class="left-sidebar" data-sidebarbg="skin6">
-        <!-- Sidebar scroll-->
+        <!-- Vertical Menu-->
         <div class="scroll-sidebar">
             <!-- Sidebar navigation-->
             <nav class="sidebar-nav">
                 <ul id="sidebarnav">
+
                     <!-- User Profile-->
-                    <li class="sidebar-item pt-2">
+                    <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html"
                            aria-expanded="false">
                             <i class="far fa-clock" aria-hidden="true"></i>
@@ -212,17 +235,17 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="profile.html"
-                           aria-expanded="false">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                            <span class="hide-menu">Quản Lý</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark sidebar-link" href="account.html"
                            aria-expanded="false">
-                            <i class="fa fa-table" aria-hidden="true"></i>
+                            <i class="fa fa-user" aria-hidden="true"></i>
                             <span class="hide-menu">Thành Viên</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item pt-2">
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="news.html"
+                           aria-expanded="">
+                            <i class="fas fa-newspaper" aria-hidden="true"></i>
+                            <span class="hide-menu">Tin Tức</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
@@ -258,7 +281,7 @@
             </nav>
             <!-- End Sidebar navigation -->
         </div>
-        <!-- End Sidebar scroll-->
+        <!-- End Vertical Menu-->
     </aside>
 
     <!-- ============================================================== -->
@@ -314,6 +337,8 @@
                                         <th>Ảnh Mô Tả</th>
                                         <th>Tiêu Đề Bài Viết</th>
                                         <th>Nội Dung</th>
+                                        <th class="delete-news">Xóa</th>
+
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -325,11 +350,16 @@
                                             </a>
                                         </td>
                                         <td class="invert">Thiết bị sử dụng để trải nghiệm OneUI 3.0: Samsung Galaxy S20 Ultra</td>
-                                        <td class="invert">Để trải nghiệm và đánh giá nhanh OneUI 3.0 mới tùy biến từ Android 11, mình đã sử dụng chiếc Samsung Galaxy S20 Ultra. Phiên bản mình sử dụng để đánh giá cho các bạn có cấu hình phần cứng như sau:
+                                        <td class="invert news-content">Để trải nghiệm và đánh giá nhanh OneUI 3.0 mới tùy biến từ Android 11, mình đã sử dụng chiếc Samsung Galaxy S20 Ultra. Phiên bản mình sử dụng để đánh giá cho các bạn có cấu hình phần cứng như sau:
 
                                             CPU: Exynos 990.
                                             RAM: 12 GB.
                                             Bộ nhớ trong: 128 GB.
+                                        </td>
+                                        <td class="invert">
+                                            <div class="rem">
+                                                <div class="close2"> </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="rem2">
@@ -345,6 +375,11 @@
                                             Khuyến mãi: Giảm ngay 10% khi mua.
 
                                             Thời gian áp dụng khuyến mãi từ ngày 01/12/2020 - 31/12/2020.
+                                        </td>
+                                        <td class="invert">
+                                            <div class="rem">
+                                                <div class="close2"> </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="rem3">
@@ -364,11 +399,11 @@
                                             Ngoài ra, bạn còn có những ý kiến nào về kết nối 5G hay câu hỏi nào cần được giải đáp thì hãy bình luận ngay bên dưới nhé:
 
                                             Xem thêm: Danh sách smartphone hiện đang hỗ trợ thử nghiệm 5G tại Việt Nam: Có OPPO, Xiaomi, Nokia, Samsung và Apple chưa thấy đâu
-
-
-
-
-
+                                        </td>
+                                        <td class="invert">
+                                            <div class="rem">
+                                                <div class="close2"> </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     </tbody>

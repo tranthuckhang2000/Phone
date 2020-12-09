@@ -11,7 +11,7 @@
     <meta name="description"
           content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
-    <title>Quản Lí Kho Hàng</title>
+    <title>Quản Lý Kho Hàng</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
     <!-- Favicon icon -->
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
@@ -42,25 +42,28 @@
     </script>
     <!-- //Meta tag Keywords -->
 
+    <!--    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">-->
     <!-- Custom-Files -->
     <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Bootstrap css -->
     <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Main css -->
+    <!--     Main css-->
     <link rel="stylesheet" href="../css/fontawesome-all.css">
-    <!-- Font-Awesome-Icons-CSS -->
+    <!--     Font-Awesome-Icons-CSS-->
     <link href="../css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- pop-up-box -->
+    <!--     pop-up-box-->
     <link href="../css/menu.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- menu style -->
-    <!-- //Custom-Files -->
+    <!--     menu style-->
 
-    <!-- web fonts -->
-    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
-          rel="stylesheet">
-    <!-- //web fonts -->
+    <!-- Custom CSS -->
+    <link href="plugins/bower_components/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
+    <!-- Custom CSS -->
 
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
 </head>
 <body>
 <!-- ============================================================== -->
@@ -96,6 +99,12 @@
                     <div class="form-group">
                         <label class="col-form-label">Giá Bán</label>
                         <input type="number" class="form-control" placeholder=" " name="Price" required="">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-form-label">Loại Sản Phẩm</label>
+                        <input type="number" class="form-control" placeholder=" " name="Option" required="">
+
                     </div>
                     <div class="form-group">
                         <label class="col-form-label">Chọn Ảnh Mô Tả: </label>
@@ -198,13 +207,14 @@
     <!-- Left Sidebar - style you can find in sidebar.scss  -->
     <!-- ============================================================== -->
     <aside class="left-sidebar" data-sidebarbg="skin6">
-        <!-- Sidebar scroll-->
+        <!-- Vertical Menu-->
         <div class="scroll-sidebar">
             <!-- Sidebar navigation-->
             <nav class="sidebar-nav">
                 <ul id="sidebarnav">
+
                     <!-- User Profile-->
-                    <li class="sidebar-item pt-2">
+                    <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html"
                            aria-expanded="false">
                             <i class="far fa-clock" aria-hidden="true"></i>
@@ -212,17 +222,17 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="profile.html"
-                           aria-expanded="false">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                            <span class="hide-menu">Quản Lý</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark sidebar-link" href="account.html"
                            aria-expanded="false">
-                            <i class="fa fa-table" aria-hidden="true"></i>
+                            <i class="fa fa-user" aria-hidden="true"></i>
                             <span class="hide-menu">Thành Viên</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item pt-2">
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="news.html"
+                           aria-expanded="">
+                            <i class="fas fa-newspaper" aria-hidden="true"></i>
+                            <span class="hide-menu">Tin Tức</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
@@ -258,7 +268,7 @@
             </nav>
             <!-- End Sidebar navigation -->
         </div>
-        <!-- End Sidebar scroll-->
+        <!-- End Vertical Menu-->
     </aside>
 
     <!-- ============================================================== -->
@@ -278,12 +288,7 @@
                 </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     <div class="d-md-flex">
-                        <!--                            <ol class="breadcrumb ml-auto">-->
-                        <!--                                <li><a href="#">Dashboard</a></li>-->
-                        <!--                            </ol>-->
-                        <!--                            <a href="https://wrappixel.com/templates/ampleadmin/" target="_blank"-->
-                        <!--                                class="btn btn-danger  d-none d-md-block pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">Upgrade-->
-                        <!--                                to Pro</a>-->
+
                     </div>
                 </div>
             </div>
@@ -302,12 +307,22 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="white-box">
-
                         <form class="form-inline" action="#" method="post">
                             <input class="form-control mr-sm-2" type="search" placeholder="Tìm Kiếm..." aria-label="Search" required>
                             <button class="btn-search my-2 my-sm-0 mg-e" type="submit">Tìm Kiếm</button>
                         </form>
+                        <button class="btn-search my-2 my-sm-0 mg-e mg-elm" type="submit">
+                            <a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
+                                Thêm Sản Phẩm</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <h2> Smartphone</h2>
 
                         <div class="checkout-right">
 
@@ -405,13 +420,331 @@
                                     </tbody>
                                 </table>
                                 <div class="mg-elm">
-                                <button class="btn-search my-2 my-sm-0 mg-e mg-elm" type="submit">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
-                                        Thêm Sản Phẩm</a>
-                                </button>
+
                                 </div>
                             </div>
                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <h2> Laptop</h2>
+
+                        <div class="checkout-right">
+
+                            <div class="table-responsive mg-elm">
+                                <table class="timetable_sub">
+                                    <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Sản Phẩm</th>
+                                        <th>Tên Sản Phẩm</th>
+                                        <th>Số Lượng</th>
+                                        <th>Giá</th>
+                                        <th>Xóa</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="rem1">
+                                        <td class="invert">1</td>
+                                        <td class="invert-image">
+                                            <a href="product/iphone/single.html">
+                                                <img src="../images/iphone/iphone_7/iphone-7-silver.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">iphone 7 32GB Silver</td>
+                                        <td class="invert">
+                                            <div class="quantity">
+                                                <div class="quantity-select">
+                                                    <div class="entry value-minus">&nbsp;</div>
+                                                    <div class="entry value">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="entry value-plus active">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="invert">5.590.00<u>đ</u></td>
+                                        <td class="invert">
+                                            <div class="rem">
+                                                <div class="close1"> </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="rem2">
+                                        <td class="invert">2</td>
+                                        <td class="invert-image">
+                                            <a href="single2.html">
+                                                <img src="../images/macbook/macbook13/macbook5.3.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">Macbook pro 13inch</td>
+                                        <td class="invert">
+                                            <div class="quantity">
+                                                <div class="quantity-select">
+                                                    <div class="entry value-minus">&nbsp;</div>
+                                                    <div class="entry value">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="entry value-plus active">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="invert">32.990.000<u>đ</u></td>
+                                        <td class="invert">
+                                            <div class="rem">
+                                                <div class="close2"> </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="rem3">
+                                        <td class="invert">3</td>
+                                        <td class="invert-image">
+                                            <a href="product/iphone/single.html">
+                                                <img src="../images/ipad/iPad%20Air%201%20Wifi%20Cellular/ipad-air-1-silver.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">ipad air 2</td>
+                                        <td class="invert">
+                                            <div class="quantity">
+                                                <div class="quantity-select">
+                                                    <div class="entry value-minus">&nbsp;</div>
+                                                    <div class="entry value">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="entry value-plus active">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class=" invert">4.990.000<u>đ</u></td>
+                                        <td class="invert">
+                                            <div class="rem l-side">
+                                                <div class="close3"> </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <h2> Tablet</h2>
+
+                        <div class="checkout-right">
+
+                            <div class="table-responsive mg-elm">
+                                <table class="timetable_sub">
+                                    <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Sản Phẩm</th>
+                                        <th>Tên Sản Phẩm</th>
+                                        <th>Số Lượng</th>
+                                        <th>Giá</th>
+                                        <th>Xóa</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="rem1">
+                                        <td class="invert">1</td>
+                                        <td class="invert-image">
+                                            <a href="product/iphone/single.html">
+                                                <img src="../images/iphone/iphone_7/iphone-7-silver.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">iphone 7 32GB Silver</td>
+                                        <td class="invert">
+                                            <div class="quantity">
+                                                <div class="quantity-select">
+                                                    <div class="entry value-minus">&nbsp;</div>
+                                                    <div class="entry value">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="entry value-plus active">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="invert">5.590.00<u>đ</u></td>
+                                        <td class="invert">
+                                            <div class="rem">
+                                                <div class="close1"> </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="rem2">
+                                        <td class="invert">2</td>
+                                        <td class="invert-image">
+                                            <a href="single2.html">
+                                                <img src="../images/macbook/macbook13/macbook5.3.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">Macbook pro 13inch</td>
+                                        <td class="invert">
+                                            <div class="quantity">
+                                                <div class="quantity-select">
+                                                    <div class="entry value-minus">&nbsp;</div>
+                                                    <div class="entry value">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="entry value-plus active">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="invert">32.990.000<u>đ</u></td>
+                                        <td class="invert">
+                                            <div class="rem">
+                                                <div class="close2"> </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="rem3">
+                                        <td class="invert">3</td>
+                                        <td class="invert-image">
+                                            <a href="product/iphone/single.html">
+                                                <img src="../images/ipad/iPad%20Air%201%20Wifi%20Cellular/ipad-air-1-silver.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">ipad air 2</td>
+                                        <td class="invert">
+                                            <div class="quantity">
+                                                <div class="quantity-select">
+                                                    <div class="entry value-minus">&nbsp;</div>
+                                                    <div class="entry value">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="entry value-plus active">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class=" invert">4.990.000<u>đ</u></td>
+                                        <td class="invert">
+                                            <div class="rem l-side">
+                                                <div class="close3"> </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <h2> Smart Watch</h2>
+
+                        <div class="checkout-right">
+
+                            <div class="table-responsive mg-elm">
+                                <table class="timetable_sub">
+                                    <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Sản Phẩm</th>
+                                        <th>Tên Sản Phẩm</th>
+                                        <th>Số Lượng</th>
+                                        <th>Giá</th>
+                                        <th>Xóa</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="rem1">
+                                        <td class="invert">1</td>
+                                        <td class="invert-image">
+                                            <a href="product/iphone/single.html">
+                                                <img src="../images/iphone/iphone_7/iphone-7-silver.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">iphone 7 32GB Silver</td>
+                                        <td class="invert">
+                                            <div class="quantity">
+                                                <div class="quantity-select">
+                                                    <div class="entry value-minus">&nbsp;</div>
+                                                    <div class="entry value">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="entry value-plus active">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="invert">5.590.00<u>đ</u></td>
+                                        <td class="invert">
+                                            <div class="rem">
+                                                <div class="close1"> </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="rem2">
+                                        <td class="invert">2</td>
+                                        <td class="invert-image">
+                                            <a href="single2.html">
+                                                <img src="../images/macbook/macbook13/macbook5.3.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">Macbook pro 13inch</td>
+                                        <td class="invert">
+                                            <div class="quantity">
+                                                <div class="quantity-select">
+                                                    <div class="entry value-minus">&nbsp;</div>
+                                                    <div class="entry value">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="entry value-plus active">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="invert">32.990.000<u>đ</u></td>
+                                        <td class="invert">
+                                            <div class="rem">
+                                                <div class="close2"> </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="rem3">
+                                        <td class="invert">3</td>
+                                        <td class="invert-image">
+                                            <a href="product/iphone/single.html">
+                                                <img src="../images/ipad/iPad%20Air%201%20Wifi%20Cellular/ipad-air-1-silver.jpg" alt=" " class="img-responsive">
+                                            </a>
+                                        </td>
+                                        <td class="invert">ipad air 2</td>
+                                        <td class="invert">
+                                            <div class="quantity">
+                                                <div class="quantity-select">
+                                                    <div class="entry value-minus">&nbsp;</div>
+                                                    <div class="entry value">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="entry value-plus active">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class=" invert">4.990.000<u>đ</u></td>
+                                        <td class="invert">
+                                            <div class="rem l-side">
+                                                <div class="close3"> </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

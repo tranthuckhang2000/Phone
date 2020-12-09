@@ -11,7 +11,7 @@
     <meta name="description"
           content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
-    <title>Quản Lí Thành Viên</title>
+    <title>Quản Lý Thành Viên</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
     <!-- Favicon icon -->
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
@@ -46,20 +46,29 @@
     <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Bootstrap css -->
     <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Main css -->
+<!--     Main css-->
     <link rel="stylesheet" href="../css/fontawesome-all.css">
-    <!-- Font-Awesome-Icons-CSS -->
+<!--     Font-Awesome-Icons-CSS-->
     <link href="../css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- pop-up-box -->
+<!--     pop-up-box-->
     <link href="../css/menu.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- menu style -->
-    <!-- //Custom-Files -->
+<!--     menu style-->
 
-    <!-- web fonts -->
-    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
-          rel="stylesheet">
-    <!-- //web fonts -->
+    <!-- Custom CSS -->
+    <link href="plugins/bower_components/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
+    <!-- Custom CSS -->
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+
+<!--    &lt;!&ndash; web fonts &ndash;&gt;-->
+<!--    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">-->
+<!--    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"-->
+<!--          rel="stylesheet">-->
+<!--    &lt;!&ndash; //web fonts &ndash;&gt;-->
 
 </head>
 
@@ -69,7 +78,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title-pro">Thêm Quản Lý Thành Viên</h5>
+                <h5 class="modal-title-pro">Thêm Thành Viên</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -201,13 +210,13 @@
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
         <aside class="left-sidebar" data-sidebarbg="skin6">
-            <!-- Sidebar scroll-->
+            <!-- Vertical Menu-->
             <div class="scroll-sidebar">
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <!-- User Profile-->
-                        <li class="sidebar-item pt-2">
+                        <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html"
                                aria-expanded="false">
                                 <i class="far fa-clock" aria-hidden="true"></i>
@@ -215,17 +224,17 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="profile.html"
-                               aria-expanded="false">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <span class="hide-menu">Quản Lý</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="account.html"
                                aria-expanded="false">
-                                <i class="fa fa-table" aria-hidden="true"></i>
-                                <span class="hide-menu">Quản Lý Thành Viên</span>
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="hide-menu">Thành Viên</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="news.html"
+                               aria-expanded="false">
+                                <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                <span class="hide-menu">Tin Tức</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -261,7 +270,7 @@
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
-            <!-- End Sidebar scroll-->
+            <!-- End Vertical Menu-->
         </aside>
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
@@ -276,21 +285,16 @@
             <div class="page-breadcrumb bg-white">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title text-uppercase font-medium font-14">Quản Lý Thành Viên</h4>
+                        <h4 class="page-title text-uppercase font-medium font-14">Tổng Quan</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <div class="d-md-flex">
-                            <ol class="breadcrumb ml-auto">
-                                <li><a href="#"></a></li>
-                            </ol>
-                            <a href="" target="_blank"
-                                class="btn btn-danger  d-none d-md-block pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">Cập Nhật</a>
+
                         </div>
                     </div>
                 </div>
                 <!-- /.col-lg-12 -->
-            </div>
-            <!-- ============================================================== -->
+            </div>            <!-- ============================================================== -->
             <!-- End Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
@@ -391,7 +395,7 @@
                                 <div class="mg-elm">
                                     <button class="btn-search my-2 my-sm-0 mg-e mg-elm" type="submit">
                                         <a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
-                                            Thêm Quản Lý Thành Viên</a>
+                                            Thêm Thành Viên</a>
                                     </button>
                                 </div>
                             </div>
