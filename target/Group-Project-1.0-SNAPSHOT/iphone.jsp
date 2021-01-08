@@ -49,100 +49,6 @@
 
 <%@ include file="header.jsp" %>
 
-<!-- navigation -->
-<div class="navbar-inner">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="agileits-navi_search">
-
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto text-center mr-xl-5">
-                    <li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="index.html">Trang Chủ
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Phụ Kiện
-                        </a>
-                        <div class="dropdown-menu">
-                            <div class="agile_inner_drop_nav_info p-4">
-                                <h5 class="mb-3">Tai Nghe</h5>
-                                <div class="row">
-                                    <div class="col-sm-6 multi-gd-img">
-                                        <ul class="multi-column-dropdown">
-                                            <li>
-                                                <a href="product.html">Airpods 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="product.html">Airpods 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="product.html">Airpods pro</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6 multi-gd-img">
-                                        <ul class="style-menu multi-column-dropdown">
-                                            <h5 class="mb-3">Sạc Dự Phòng</h5>
-
-                                            <li>
-                                                <a href="iphone.jsp">Iphone</a>
-                                            </li>
-                                            <li>
-                                                <a href="ipad.html">Ipad</a>
-                                            </li>
-                                            <li>
-                                                <a href="macbook.html">Macbook</a>
-                                            </li>
-                                            <h5 class="mb-3">Chuột, Bàn Phím</h5>
-                                            <li>
-                                                <a href="product.html">Magic Mouse</a>
-                                            </li>
-                                            <li>
-                                                <a href="product.html">Smartkey Board</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="iphone.jsp">Iphone</a>
-                    </li>
-                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="ipad.html">Ipad</a>
-                    </li>
-                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="macbook.html">Macbook</a>
-                    </li>
-                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="appleWatch.html">Apple Watch</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Giới Thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Liên Hệ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news/index.html">Tin Tức</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</div>
-<!-- //navigation -->
 <!-- page -->
 <div class="services-breadcrumb">
     <div class="agile_inner_breadcrumb">
@@ -152,7 +58,7 @@
                     <a href="index.html">Trang chủ</a>
                     <i>|</i>
                 </li>
-                <li>Macbook</li>
+                <li></li>
             </ul>
         </div>
     </div>
@@ -199,7 +105,7 @@
                                                     <input type="hidden" name="add" value="1" />
                                                     <input type="hidden" name="business" value=" " />
                                                     <input type="hidden" name="item_name" value="${d.tensanpham}" />
-                                                    <input type="hidden" name="amount" value="${d.gia}" />
+                                                    <input type="hidden" name="amount" value="${d.gia}.toLocaleString()" />
                                                     <input type="hidden" name="discount_amount" value="1.00" />
                                                     <input type="hidden" name="currency_code" value="đ" />
                                                     <input type="hidden" name="return" value=" " />
