@@ -191,23 +191,7 @@
     </div>
     <!-- End Vertical Menu-->
 </aside>
-<!-- ============================================================== -->
-<!-- End Left Sidebar - style you can find in sidebar.scss  -->
-<!-- ============================================================== -->
-<!-- ============================================================== -->
 
-<script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="plugins/bower_components/popper.js/dist/umd/popper.min.js"></script>
-<script src="bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/app-style-switcher.js"></script>
-<script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
-<script src="js/waves.js"></script>
-<script src="js/sidebarmenu.js"></script>
-<script src="js/custom.js"></script>
-
-<script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>
-<script src="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-<script src="js/pages/dashboards/dashboard1.js"></script>
 </body>
 
 </html>

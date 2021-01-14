@@ -44,6 +44,7 @@
 
 </head>
 
+
 <body>
 <!-- top-header -->
 <div class="agile-main-top"header-bot	>
@@ -218,7 +219,7 @@
                         <a class="nav-link" href="contact.html">Liên Hệ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news/index.html">Tin Tức</a>
+                        <a class="nav-link" href="/news/index.html">Tin Tức</a>
                     </li>
                 </ul>
             </div>
@@ -226,82 +227,4 @@
     </div>
 </div>
 <!-- //navigation -->
-
-<!-- banner -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <!-- Indicators-->
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item item1 active">
-            <div class="container">
-                <div class="w3l-space-banner">
-                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
-                        <p>Hoàn Tiền Lên Đến
-                            <span>10%</span></p>
-                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Iphone
-                            <span>Giá </span>
-                            Tốt
-                        </h3>
-                        <a class="button2" href="iphone.jsp">Mua Ngay </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item item2">
-            <div class="container">
-                <div class="w3l-space-banner">
-                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
-                        <p>Nâng Cao
-                            <span>Hiệu Suất</span> Hoạt Động</p>
-                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Siêu Máy Tính
-                            <span>Macbook Pro</span>
-                        </h3>
-                        <a class="button2" href="iphone.jsp">Mua Ngay </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item item3">
-            <div class="container">
-                <div class="w3l-space-banner">
-                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
-                        <p>Hoàn Tiền
-                            <span>Lên Đến 10%</span></p>
-                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Tiêu Chuẩn
-                            <span>Mới</span>
-                        </h3>
-                        <a class="button2" href="macbook.html">Mua Ngay</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item item4">
-            <div class="container">
-                <div class="w3l-space-banner">
-                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
-                        <p>Nhận Ngay
-                            <span>Phiếu Giảm Giá 10%</span></p>
-                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Ngay Trong
-                            <span>Hôm Nay</span>
-                        </h3>
-                        <a class="button2" href="macbook13.6.html">Mua Ngay </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-<!-- //banner -->
+</body>

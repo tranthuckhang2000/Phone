@@ -11,15 +11,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Collection;
 
-@WebServlet(urlPatterns = "/ListDataIphone")
-public class ListDataIphone extends HttpServlet {
+@WebServlet(urlPatterns = "/ListDataVsmart")
+public class ListDataVsmart extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         SmartphoneEntity ie = new SmartphoneEntity();
-        Collection<Smartphone> values = ie.getAllIphone();
+        Collection<Smartphone> values = ie.getAllVsmart();
         request.setAttribute("data", values);
         request.getRequestDispatcher("smartphone.jsp").forward(request, response);
     }
