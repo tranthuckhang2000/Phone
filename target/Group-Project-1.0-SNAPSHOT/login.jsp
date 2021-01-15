@@ -77,7 +77,7 @@
 <div class="login-page">
     <div class="form">
 
-        <form class="login-form" method="get" action="/Login">
+        <form class="login-form" method="post" action="/login">
             <h3>Đăng Nhập</h3>
             <input type="text" id="ten_dang_nhap" name="ten_dang_nhap" placeholder="Tên đăng nhập"/>
             <input type="password" id="mat_khau" name="mat_khau" placeholder="Mật khẩu"/>
