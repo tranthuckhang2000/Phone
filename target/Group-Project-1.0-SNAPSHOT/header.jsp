@@ -151,67 +151,31 @@
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Phụ Kiện
-                        </a>
-                        <div class="dropdown-menu">
-                            <div class="agile_inner_drop_nav_info p-4">
-                                <h5 class="mb-3">Tai Nghe</h5>
-                                <div class="row">
-                                    <div class="col-sm-6 multi-gd-img">
-                                        <ul class="multi-column-dropdown">
-                                            <li>
-                                                <a href="product.html">Airpods 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="product.html">Airpods 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="product.html">Airpods pro</a>
-                                            </li>
 
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6 multi-gd-img">
-                                        <ul class="style-menu multi-column-dropdown">
-                                            <h5 class="mb-3">Sạc Dự Phòng</h5>
-
-                                            <li>
-                                                <a href="iphone.jsp">Iphone</a>
-                                            </li>
-                                            <li>
-                                                <a href="ipad.html">Ipad</a>
-                                            </li>
-                                            <li>
-                                                <a href="macbook.html">Macbook</a>
-                                            </li>
-                                            <h5 class="mb-3">Chuột, Bàn Phím</h5>
-                                            <li>
-                                                <a href="product.html">Magic Mouse</a>
-                                            </li>
-                                            <li>
-                                                <a href="product.html">Smartkey Board</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                        <a class="nav-link" href="http://localhost:8080/Group_Project/ListDataIphone">iphone</a>
+                    </li>
+                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                        <a class="nav-link" href="ipad.html">ipad</a>
+                    </li>
+                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                        <a class="nav-link" href="http://localhost:8080/Group_Project/ListDataSamsung">Samsung</a>
+                    </li>
+                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                        <a class="nav-link" href="http://localhost:8080/Group_Project/ListDataXiaomi">Xiaomi</a>
+                    </li>
+                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                        <a class="nav-link" href="http://localhost:8080/Group_Project/ListDataVsmart">Vsmart</a>
                     </li>
 
                     <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="iphone.jsp">Iphone</a>
+                        <a class="nav-link" href="http://localhost:8080/Group_Project/ListDataRealme">Realme</a>
                     </li>
+
                     <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="ipad.html">Ipad</a>
+                        <a class="nav-link" href="appleWatch.html"></a>
                     </li>
-                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="macbook.html">Macbook</a>
-                    </li>
-                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="appleWatch.html">Apple Watch</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">Giới Thiệu</a>
                     </li>

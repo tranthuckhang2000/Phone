@@ -21,6 +21,7 @@ public class ListDataIphone extends HttpServlet {
         SmartphoneEntity ie = new SmartphoneEntity();
         Collection<Smartphone> values = ie.getAllIphone();
         request.setAttribute("data", values);
+//        request.setAttribute();
         request.getRequestDispatcher("smartphone.jsp").forward(request, response);
     }
 }

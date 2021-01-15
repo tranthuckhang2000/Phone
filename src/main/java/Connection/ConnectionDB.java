@@ -31,14 +31,15 @@ public class ConnectionDB<a> {
     }
 
     public static void main(String[] args) throws Exception {
-        String id = "ip0001";
+        String ten_dang_nhap = "khang";
         Connection conn = getConnection();
-        PreparedStatement ps = conn.prepareStatement("select * from smart_phone where masp like ? ");
-        ps.setString(1, id);
+        PreparedStatement ps = conn.prepareStatement("select * from account where ten_dang_nhap like 'khang' ");
         ResultSet rs = ps.executeQuery();
         while (rs.next()) {
-            System.out.println(rs.getString("ten_san_pham"));
+            System.out.println(rs.getString("ho_va_ten"));
         }
+
+    }
 
 
 //        String img = "111233";
@@ -68,7 +69,7 @@ public class ConnectionDB<a> {
 //        while (rs.next()) {
 //            System.out.println(rs.getString(1));
 //        }
-    }
+
 //    String a = "ip0001";
 //     Connection conn = getConnection();
 //     String sql = "select * from smart_phone where id like ?";
