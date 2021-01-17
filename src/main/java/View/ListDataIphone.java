@@ -1,7 +1,7 @@
 package View;
 
-import Model.Iphone;
-import Model.IphoneEntity;
+import Model.Smartphone;
+import Model.SmartphoneEntity;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,13 +14,14 @@ import java.util.Collection;
 @WebServlet(urlPatterns = "/ListDataIphone")
 public class ListDataIphone extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-     doGet(request, response);
+        doGet(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        IphoneEntity ie = new IphoneEntity();
-        Collection<Iphone> values = ie.getAllIphone();
-        request.setAttribute("data",values);
-        request.getRequestDispatcher("iphone.jsp").forward(request,response);
+        SmartphoneEntity ie = new SmartphoneEntity();
+        Collection<Smartphone> values = ie.getAllIphone();
+        request.setAttribute("data", values);
+//        request.setAttribute();
+        request.getRequestDispatcher("smartphone.jsp").forward(request, response);
     }
 }

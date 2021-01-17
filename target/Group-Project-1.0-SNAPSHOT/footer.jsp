@@ -172,7 +172,7 @@
                 <div class="col-md-3 col-sm-6 footer-grids w3l-agileits mt-md-0 mt-4">
                     <!-- newsletter -->
                     <h3 class="text-white font-weight-bold mb-3">Bản Tin</h3>
-                    <p class="mb-3">Giao Hàng Miễn Phí Cho Đơn Hàng Lớn Hơn 2 Triệu</p>
+                    <p class="mb-3">Giao Hàng Miễní Cho Đơn Hàng Lớn Hơn 2 Triệu</p>
                     <form action="#" method="post">
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Email" name="email" required="">

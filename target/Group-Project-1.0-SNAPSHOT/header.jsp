@@ -44,6 +44,7 @@
 
 </head>
 
+
 <body>
 <!-- top-header -->
 <div class="agile-main-top"header-bot	>
@@ -150,67 +151,31 @@
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Phụ Kiện
-                        </a>
-                        <div class="dropdown-menu">
-                            <div class="agile_inner_drop_nav_info p-4">
-                                <h5 class="mb-3">Tai Nghe</h5>
-                                <div class="row">
-                                    <div class="col-sm-6 multi-gd-img">
-                                        <ul class="multi-column-dropdown">
-                                            <li>
-                                                <a href="product.html">Airpods 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="product.html">Airpods 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="product.html">Airpods pro</a>
-                                            </li>
 
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6 multi-gd-img">
-                                        <ul class="style-menu multi-column-dropdown">
-                                            <h5 class="mb-3">Sạc Dự Phòng</h5>
-
-                                            <li>
-                                                <a href="iphone.jsp">Iphone</a>
-                                            </li>
-                                            <li>
-                                                <a href="ipad.html">Ipad</a>
-                                            </li>
-                                            <li>
-                                                <a href="macbook.html">Macbook</a>
-                                            </li>
-                                            <h5 class="mb-3">Chuột, Bàn Phím</h5>
-                                            <li>
-                                                <a href="product.html">Magic Mouse</a>
-                                            </li>
-                                            <li>
-                                                <a href="product.html">Smartkey Board</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                        <a class="nav-link" href="http://localhost:8080/Group_Project/ListDataIphone">iphone</a>
+                    </li>
+                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                        <a class="nav-link" href="ipad.html">ipad</a>
+                    </li>
+                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                        <a class="nav-link" href="http://localhost:8080/Group_Project/ListDataSamsung">Samsung</a>
+                    </li>
+                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                        <a class="nav-link" href="http://localhost:8080/Group_Project/ListDataXiaomi">Xiaomi</a>
+                    </li>
+                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+                        <a class="nav-link" href="http://localhost:8080/Group_Project/ListDataVsmart">Vsmart</a>
                     </li>
 
                     <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="iphone.jsp">Iphone</a>
+                        <a class="nav-link" href="http://localhost:8080/Group_Project/ListDataRealme">Realme</a>
                     </li>
+
                     <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="ipad.html">Ipad</a>
+                        <a class="nav-link" href="appleWatch.html"></a>
                     </li>
-                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="macbook.html">Macbook</a>
-                    </li>
-                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a class="nav-link" href="appleWatch.html">Apple Watch</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">Giới Thiệu</a>
                     </li>
@@ -218,7 +183,7 @@
                         <a class="nav-link" href="contact.html">Liên Hệ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news/index.html">Tin Tức</a>
+                        <a class="nav-link" href="/news/index.html">Tin Tức</a>
                     </li>
                 </ul>
             </div>
@@ -226,82 +191,4 @@
     </div>
 </div>
 <!-- //navigation -->
-
-<!-- banner -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <!-- Indicators-->
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item item1 active">
-            <div class="container">
-                <div class="w3l-space-banner">
-                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
-                        <p>Hoàn Tiền Lên Đến
-                            <span>10%</span></p>
-                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Iphone
-                            <span>Giá </span>
-                            Tốt
-                        </h3>
-                        <a class="button2" href="iphone.jsp">Mua Ngay </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item item2">
-            <div class="container">
-                <div class="w3l-space-banner">
-                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
-                        <p>Nâng Cao
-                            <span>Hiệu Suất</span> Hoạt Động</p>
-                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Siêu Máy Tính
-                            <span>Macbook Pro</span>
-                        </h3>
-                        <a class="button2" href="iphone.jsp">Mua Ngay </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item item3">
-            <div class="container">
-                <div class="w3l-space-banner">
-                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
-                        <p>Hoàn Tiền
-                            <span>Lên Đến 10%</span></p>
-                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Tiêu Chuẩn
-                            <span>Mới</span>
-                        </h3>
-                        <a class="button2" href="macbook.html">Mua Ngay</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item item4">
-            <div class="container">
-                <div class="w3l-space-banner">
-                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
-                        <p>Nhận Ngay
-                            <span>Phiếu Giảm Giá 10%</span></p>
-                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Ngay Trong
-                            <span>Hôm Nay</span>
-                        </h3>
-                        <a class="button2" href="macbook13.6.html">Mua Ngay </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-<!-- //banner -->
+</body>
