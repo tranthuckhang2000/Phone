@@ -105,6 +105,7 @@ public class Account {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
 //        System.out.println(getListAccount());
         System.out.println(checkAccount("khang", "khang123"));
+
     }
 
 }

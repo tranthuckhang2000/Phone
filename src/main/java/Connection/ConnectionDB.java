@@ -10,6 +10,16 @@ import java.sql.Statement;
 public class ConnectionDB<a> {
     static Connection con;
 
+    static {
+        try {
+            con = getConnection();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
     public ConnectionDB() throws SQLException, ClassNotFoundException {
     }
 

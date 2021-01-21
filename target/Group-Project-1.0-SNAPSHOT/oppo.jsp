@@ -25,15 +25,15 @@
     <!-- //Meta tag Keywords -->
 
     <!-- Custom-Files -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/web/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Bootstrap css -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/web/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Main css -->
-    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/web/fontawesome-all.css">
     <!-- Font-Awesome-Icons-CSS -->
-    <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/web/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
     <!-- pop-up-box -->
-    <link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/web/menu.css" rel="stylesheet" type="text/css" media="all" />
     <!-- menu style -->
     <!-- //Custom-Files -->
 
@@ -47,7 +47,7 @@
 
 <body>
 
-<%@ include file="header.jsp" %>
+<%@ include file="View/web/header.jsp" %>
 
 <!-- page -->
 <div class="services-breadcrumb">
@@ -131,7 +131,7 @@
 
 <!-- //top products -->
 
-<%@ include file="footer.jsp" %>
+<%@ include file="View/web/footer.jsp" %>
 
 
 <!-- js-files -->
