@@ -1,3 +1,4 @@
+<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
 <%--
   Created by IntelliJ IDEA.
   User: khangtran
@@ -12,7 +13,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="../../admin/favicon.png"/>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
@@ -25,30 +26,30 @@
     <!-- Favicon icon -->
     <!--    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">-->
     <!-- Custom-Files -->
-    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Bootstrap css -->
-    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!--     Main css-->
-    <link rel="stylesheet" href="../css/fontawesome-all.css">
+    <link rel="stylesheet" href="../../css/fontawesome-all.css">
     <!--     Font-Awesome-Icons-CSS-->
-    <link href="../css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
     <!--     pop-up-box-->
-    <link href="../css/menu.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../css/menu.css" rel="stylesheet" type="text/css" media="all" />
     <!--     menu style-->
 
     <!-- Custom CSS -->
-    <link href="plugins/bower_components/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
+    <link href="../../admin/plugins/bower_components/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../admin/plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
     <!-- Custom CSS -->
 
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="../../admin/css/style.css" rel="stylesheet">
+    <link href="../../admin/css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
 </head>
 
 <body>
-
+<!-- ============================================================== -->
 <!-- Topbar header - style you can find in pages.scss -->
 <!-- ============================================================== -->
 <header class="topbar" data-navbarbg="skin5">
@@ -57,7 +58,7 @@
             <!-- ============================================================== -->
             <!-- Logo -->
             <!-- ============================================================== -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="../View/admin/index.html">
                 <!-- Logo icon -->
                 <!--                        <b class="logo-icon">-->
                 <!--                            &lt;!&ndash; Dark Logo icon &ndash;&gt;-->
@@ -66,7 +67,7 @@
                 <!--End Logo icon -->
                 <!-- Logo text -->
                 <h1 class="text-center">
-                    <a style="color: #d70018" href="index.html" class="font-weight-bold font-tahoma">
+                    <a style="color: #d70018" href="../View/admin/index.html" class="font-weight-bold font-tahoma">
                         CellApples
                     </a>
                 </h1>
@@ -135,23 +136,23 @@
             <ul id="sidebarnav">
 
                 <!-- User Profile-->
-                <li class="sidebar-item pt-2">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href=""
+                <li class="sidebar-item">
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../View/admin/index.html"
                        aria-expanded="false">
                         <i class="far fa-clock" aria-hidden="true"></i>
                         <span class="hide-menu">Tổng Quan</span>
                     </a>
                 </li>
-                <li class="sidebar-item pt-2">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="account.html"
+                <li class="sidebar-item">
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../View/admin/account.html"
                        aria-expanded="false">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <span class="hide-menu">Thành Viên</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item pt-2">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="news.html"
-                       aria-expanded="false">
+                       aria-expanded="">
                         <i class="fas fa-newspaper" aria-hidden="true"></i>
                         <span class="hide-menu">Tin Tức</span>
                     </a>

@@ -1,17 +1,18 @@
 package Model;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
+
 
 public class Smartphone implements Serializable {
     private String masp;
     private String ten_san_pham;
-    private BigDecimal gia;
-    private BigDecimal gia_khuyen_mai;
+    private int gia;
+    private String ngay_ra_mat;
+    private int gia_khuyen_mai;
     private String hinh_mo_ta_1;
-    private String mau;
     private String hinh_mo_ta_2;
     private String hinh_mo_ta_3;
+    private String mau;
     private String thuong_hieu;
     private String man_hinh;
     private String kich_thuoc_man_hinh;
@@ -26,16 +27,18 @@ public class Smartphone implements Serializable {
     private String mo_ta_1;
     private String mo_ta_2;
     private String mo_ta_3;
+    private int so_luong;
 
-    public Smartphone(String masp, String ten_san_pham, BigDecimal gia, BigDecimal gia_khuyen_mai, String hinh_mo_ta_1, String mau, String hinh_mo_ta_2, String hinh_mo_ta_3, String thuong_hieu, String man_hinh, String kich_thuoc_man_hinh, String he_dieu_hanh, String cpu, String camera_truoc, String camera_sau, String bon_ho, String ram, String the_sim, String pin, String mo_ta_1, String mo_ta_2, String mo_ta_3) {
+    public Smartphone(String masp, String ten_san_pham, int gia, String ngay_ra_mat, int gia_khuyen_mai, String hinh_mo_ta_1,String hinh_mo_ta_2, String hinh_mo_ta_3,  String mau,  String thuong_hieu, String man_hinh, String kich_thuoc_man_hinh, String he_dieu_hanh, String cpu, String camera_truoc, String camera_sau, String bon_ho, String ram, String the_sim, String pin, String mo_ta_1, String mo_ta_2, String mo_ta_3, int so_luong) {
         this.masp = masp;
         this.ten_san_pham = ten_san_pham;
         this.gia = gia;
+        this.ngay_ra_mat = ngay_ra_mat;
         this.gia_khuyen_mai = gia_khuyen_mai;
         this.hinh_mo_ta_1 = hinh_mo_ta_1;
-        this.mau = mau;
         this.hinh_mo_ta_2 = hinh_mo_ta_2;
         this.hinh_mo_ta_3 = hinh_mo_ta_3;
+        this.mau = mau;
         this.thuong_hieu = thuong_hieu;
         this.man_hinh = man_hinh;
         this.kich_thuoc_man_hinh = kich_thuoc_man_hinh;
@@ -50,7 +53,9 @@ public class Smartphone implements Serializable {
         this.mo_ta_1 = mo_ta_1;
         this.mo_ta_2 = mo_ta_2;
         this.mo_ta_3 = mo_ta_3;
+        this.so_luong = so_luong;
     }
+
 
     public String getMasp() {
         return masp;
@@ -68,19 +73,27 @@ public class Smartphone implements Serializable {
         this.ten_san_pham = ten_san_pham;
     }
 
-    public BigDecimal getGia() {
+    public int getGia() {
         return gia;
     }
 
-    public void setGia(BigDecimal gia) {
+    public void setGia(int gia) {
         this.gia = gia;
     }
 
-    public BigDecimal getGia_khuyen_mai() {
+    public String getNgay_ra_mat() {
+        return ngay_ra_mat;
+    }
+
+    public void setNgay_ra_mat(String ngay_ra_mat) {
+        this.ngay_ra_mat = ngay_ra_mat;
+    }
+
+    public int getGia_khuyen_mai() {
         return gia_khuyen_mai;
     }
 
-    public void setGia_khuyen_mai(BigDecimal gia_khuyen_mai) {
+    public void setGia_khuyen_mai(int gia_khuyen_mai) {
         this.gia_khuyen_mai = gia_khuyen_mai;
     }
 
@@ -226,6 +239,14 @@ public class Smartphone implements Serializable {
 
     public void setMo_ta_3(String mo_ta_3) {
         this.mo_ta_3 = mo_ta_3;
+    }
+
+    public int getSo_luong() {
+        return so_luong;
+    }
+
+    public void setSo_luong(int so_luong) {
+        this.so_luong = so_luong;
     }
 }
 
