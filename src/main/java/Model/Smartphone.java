@@ -20,7 +20,7 @@ public class Smartphone implements Serializable {
     private String cpu;
     private String camera_truoc;
     private String camera_sau;
-    private String bon_ho;
+    private String bo_nho;
     private String ram;
     private String the_sim;
     private String pin;
@@ -29,7 +29,7 @@ public class Smartphone implements Serializable {
     private String mo_ta_3;
     private int so_luong;
 
-    public Smartphone(String masp, String ten_san_pham, int gia, String ngay_ra_mat, int gia_khuyen_mai, String hinh_mo_ta_1,String hinh_mo_ta_2, String hinh_mo_ta_3,  String mau,  String thuong_hieu, String man_hinh, String kich_thuoc_man_hinh, String he_dieu_hanh, String cpu, String camera_truoc, String camera_sau, String bon_ho, String ram, String the_sim, String pin, String mo_ta_1, String mo_ta_2, String mo_ta_3, int so_luong) {
+    public Smartphone(String masp, String ten_san_pham, int gia, String ngay_ra_mat, int gia_khuyen_mai, String hinh_mo_ta_1,String hinh_mo_ta_2, String hinh_mo_ta_3,  String mau,  String thuong_hieu, String man_hinh, String kich_thuoc_man_hinh, String he_dieu_hanh, String cpu, String camera_truoc, String camera_sau, String bo_nho, String ram, String the_sim, String pin, String mo_ta_1, String mo_ta_2, String mo_ta_3, int so_luong) {
         this.masp = masp;
         this.ten_san_pham = ten_san_pham;
         this.gia = gia;
@@ -46,7 +46,7 @@ public class Smartphone implements Serializable {
         this.cpu = cpu;
         this.camera_truoc = camera_truoc;
         this.camera_sau = camera_sau;
-        this.bon_ho = bon_ho;
+        this.bo_nho = Smartphone.this.bo_nho;
         this.ram = ram;
         this.the_sim = the_sim;
         this.pin = pin;
@@ -185,12 +185,12 @@ public class Smartphone implements Serializable {
         this.camera_sau = camera_sau;
     }
 
-    public String getBon_ho() {
-        return bon_ho;
+    public String getbo_nho() {
+        return bo_nho;
     }
 
-    public void setBon_ho(String bon_ho) {
-        this.bon_ho = bon_ho;
+    public void setbo_nho(String bo_nho) {
+        this.bo_nho = Smartphone.this.bo_nho;
     }
 
     public String getRam() {
@@ -247,6 +247,37 @@ public class Smartphone implements Serializable {
 
     public void setSo_luong(int so_luong) {
         this.so_luong = so_luong;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "masp='" + masp + '\'' +
+                ", ten_san_pham='" + ten_san_pham + '\'' +
+                ", gia=" + gia +
+                ", ngay_ra_mat='" + ngay_ra_mat + '\'' +
+                ", gia_khuyen_mai=" + gia_khuyen_mai +
+                ", hinh_mo_ta_1='" + hinh_mo_ta_1 + '\'' +
+                ", hinh_mo_ta_2='" + hinh_mo_ta_2 + '\'' +
+                ", hinh_mo_ta_3='" + hinh_mo_ta_3 + '\'' +
+                ", mau='" + mau + '\'' +
+                ", thuong_hieu='" + thuong_hieu + '\'' +
+                ", man_hinh='" + man_hinh + '\'' +
+                ", kich_thuoc_man_hinh='" + kich_thuoc_man_hinh + '\'' +
+                ", he_dieu_hanh='" + he_dieu_hanh + '\'' +
+                ", cpu='" + cpu + '\'' +
+                ", camera_truoc='" + camera_truoc + '\'' +
+                ", camera_sau='" + camera_sau + '\'' +
+                ", bo_nho='" + bo_nho + '\'' +
+                ", ram='" + ram + '\'' +
+                ", the_sim='" + the_sim + '\'' +
+                ", pin='" + pin + '\'' +
+                ", mo_ta_1='" + mo_ta_1 + '\'' +
+                ", mo_ta_2='" + mo_ta_2 + '\'' +
+                ", mo_ta_3='" + mo_ta_3 + '\'' +
+                ", so_luong=" + so_luong +
+                '}';
     }
 }
 

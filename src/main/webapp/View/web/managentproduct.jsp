@@ -1,54 +1,65 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: khangtran
+  Date: 05/01/2021
+  Time: 19:56
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
-<!DOCTYPE html>
-<html lang="zxx">
+<html>
 
 <head>
-    <title>Cellphones</title>
-    <!-- Meta tag Keywords -->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <meta charset="utf-8">
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" type="image/png" href="<c:url value='/images/favicon.png'/>"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8" />
-    <meta name="keywords" content="Electro Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
-    />
-    <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
-    <!-- //Meta tag Keywords -->
-
+    <meta name="keywords"
+          content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, Ample lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Ample admin lite dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+          content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Quản Lý Sản Phẩm</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/"/>
     <!-- Custom-Files -->
-    <link href="css/web/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<c:url value ='/decorator/web/bootstrap.css'/>" rel="stylesheet" type="text/css" media="all"/>
     <!-- Bootstrap css -->
-    <link href="css/web/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Main css -->
-    <link rel="stylesheet" href="css/web/fontawesome-all.css">
-    <!-- Font-Awesome-Icons-CSS -->
-    <link href="css/web/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- pop-up-box -->
-    <link href="css/web/menu.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- menu style -->
-    <!-- //Custom-Files -->
+    <link href="<c:url value='/decorator/web/style.css'/>" rel="stylesheet" type="text/css" media="all"/>
+    <!--     Main css-->
+    <link rel="stylesheet" href="<c:url value='/decorator/web/fontawesome-all.css'/>">
+    <!--     Font-Awesome-Icons-CSS-->
+    <link href="<c:url value='//decorator/webpopuo-box.css'/>" rel="stylesheet" type="text/css" media="all"/>
+    <!--     pop-up-box-->
+    <link href="<c:url value='/decorator/web/menu.css'/>" rel="stylesheet" type="text/css" media="all"/>
+    <!--     menu style-->
 
-    <!-- web fonts -->
-    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+    <!-- Custom CSS -->
+    <link href="<c:url value='/decorator/admin/plugins/bower_components/chartist/dist/chartist.min.css'/>"
           rel="stylesheet">
-    <!-- //web fonts -->
+    <link rel="stylesheet"
+          href="<c:url value='/decorator/admin/plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css'/>">
+    <!-- Custom CSS -->
 
+    <link href="<c:url value='/decorator/admin/css/style.css'/>" rel="stylesheet">
+    <link href="<c:url value='/decorator/admin/css/style.min.css'/>" rel="stylesheet">
+
+    <%--    <link href="/css/admin/css/style.css" rel="stylesheet">--%>
+    <%--    <link href="/css/admin/css/style.min.css" rel="stylesheet">--%>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+          integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+          integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
 </head>
 
 <body>
-
-<%@ include file="View/web/header.jsp" %>
-
+<%@include file="header.jsp"%>
 <!-- page -->
 <div class="services-breadcrumb">
     <div class="agile_inner_breadcrumb">
@@ -58,30 +69,13 @@
                     <a href="index.html">Trang chủ</a>
                     <i>|</i>
                 </li>
-                <li>iphone</li>
+                <li>${smartphone.ten_san_pham}</li>
             </ul>
         </div>
     </div>
 </div>
 <!-- //page -->
 
-
-<!-- page -->
-<div class="services-breadcrumb">
-    <div class="agile_inner_breadcrumb">
-        <div class="container">
-            <ul class="w3_short">
-                <li>
-                    <a href="index.html">Home</a>
-                    <i>|</i>
-                </li>
-                <li>Macbook <i>|</i></li>
-                <li>Macbook Pro 13 inch MV9A2 8GB/512GB 2019</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- //page -->
 
 <!-- Single Page -->
 <div class="banner-bootom-w3-agileits py-5">
@@ -94,17 +88,17 @@
                 <div class="grid images_3_of_2">
                     <div class="flexslider">
                         <ul class="slides">
-                            <li data-thumb="images/macbook/macbook13/macbook8.1-14.1.jpg">
+                            <li data-thumb="${smartphone.hinh_mo_ta_1}">
                                 <div class="thumb-image">
-                                    <img src="images/macbook/macbook13/macbook8.1-14.1.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
+                                    <img src="${smartphone.hinh_mo_ta_2}" data-imagezoom="true" class="img-fluid" alt=""> </div>
                             </li>
-                            <li data-thumb="images/macbook/macbook13/macbook8.2.jpg">
+                            <li data-thumb="${smartphone.hinh_mo_ta_1}">
                                 <div class="thumb-image">
-                                    <img src="images/macbook/macbook13/macbook8.2.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
+                                    <img src="${smartphone.hinh_mo_ta_1}" data-imagezoom="true" class="img-fluid" alt=""> </div>
                             </li>
-                            <li data-thumb="images/macbook/macbook13/macbook8.3.jpg">
+                            <li data-thumb="${smartphone.hinh_mo_ta_1}">
                                 <div class="thumb-image">
-                                    <img src="images/macbook/macbook13/macbook8.3.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
+                                    <img src="${smartphone.hinh_mo_ta_1}" data-imagezoom="true" class="img-fluid" alt=""> </div>
                             </li>
                         </ul>
                         <div class="clearfix"></div>
@@ -113,9 +107,9 @@
             </div>
 
             <div class="col-lg-7 single-right-left simpleCart_shelfItem">
-                <h3 class="mb-3">Macbook Pro 13 inch MV972 8GB/512GB 2019</h3>
+                <h3 class="mb-3">${smartphone.ten_san_pham}</h3>
                 <p class="mb-3">
-                    <span class="item_price">41.999.000 đ</span>
+                    <span class="item_price">${smartphone.gia} đ</span>
                     <!-- <del class="mx-2 font-weight-light">1 đồng </del> -->
                     <label>Miễn phí vẫn chuyển</label>
                 </p>
@@ -123,7 +117,7 @@
                 <form>
                     <div class="single-infoagile">
                         <form>
-                            <label class="container"> 8GB/512GB
+                            <label class="container"> ${smartphone.ram}/${smartphone.bo_nho}
                                 <input type="radio" id="buttonsize1" name="check1" value="">
                             </label>
                             <!-- <label class="container">6GB/128GB
@@ -162,7 +156,7 @@
 
                 <div class="single-infoagile11">
                     <h5><b><i> Màu sắc</i></b></h5>
-                    <label class="container">Bạc
+                    <label class="container">${smartphone.mau}
                         <input type="radio" checked="checked" name="check2">
                         <span class="checkmark"></span>
                     </label>
@@ -187,10 +181,10 @@
                                 <input type="hidden" name="cmd" value="_cart" />
                                 <input type="hidden" name="add" value="1" />
                                 <input type="hidden" name="business" value=" " />
-                                <input type="hidden" name="item_name" value="Macbook Pro 13 inch MV972 8GB/512GB 2019" />
-                                <input type="hidden" name="amount" value="41.999.000 đ " />
+                                <input type="hidden" name="item_name" value="${smartphone.ten_san_pham}" />
+                                <input type="hidden" name="amount" value="${smartphone.gia}" />
                                 <input type="hidden" name="discount_amount" value="1.00" />
-                                <input type="hidden" name="currency_code" value="USD" />
+                                <input type="hidden" name="currency_code" value="đ" />
                                 <input type="hidden" name="return" value=" " />
                                 <input type="hidden" name="cancel_return" value=" " />
                                 <input type="submit" name="submit" value="Add to cart" class="button" />
@@ -203,52 +197,14 @@
         <div class="row">
             <div class="col-xl-7 col-lg-7 aos-init aos-animate" data-aos="fade-right">
                 <h5><b><i>Mô tả sản phẩm</i></b></h5>
-                <p>Apple vừa rồi đã cập nhật phiên bản máy tính xách tay mạnh mẽ hàng đầu của hãng vào danh sách
-                    những chiếc laptop đáng mua nhất trên thị trường hiện nay. Chiếc Macbook Pro 13 inch MV972 vẫn giữ
-                    nguyên kiểu dáng tương tự những người tiền nhiệm, điểm khác biệt chủ yếu nằm ở phần cứng. Máy được cập nhật bộ xử lý cùng độ
-                    xung nhịp tăng hơn trước đây. Điều này đồng nghĩa với việc chiếc Macbook Pro 13 inch hứa hẹn sẽ mang đến hiệu năng tốt hơn, tốc độ
-                    trải nghiệm nhanh hơn cho người dùng. Bàn phím máy bên cạnh đó cũng được Apple chăm chút tỉ mỉ, cho phép người dùng có thể gõ máy êm, không phát ra tiếng ồn, bộ gõ ổn định hơn.
+                <p>${smartphone.mo_ta_1}
                 </p> <img src="images/macbook/macbook13/Macbook12.2.jpg" >
-                <p>Macbook Pro 13 inch MV972 2019 – những tính năng nổi bật</p>
+                <p>${smartphone.ten_san_pham} – những tính năng nổi bật</p>
                 <p>1. Máy hoạt động với hiệu năng ấn tượng</p>
-                <p>Trang bị trên mình bộ xử lý Intel mới nhất, với bốn lõi thay vì chỉ hai lõi như các thế hệ tiền nhiệm trước đây. Bộ vi xử lý này cho
-                    tốc độ vô cùng ấn tượng: 2,4GHz, Turbo Boost 4,1GHz, giúp MacBook Pro 2019 có hiệu năng CPU đạt tới một tầm cao mới, xử lý trơn tru
-                    mọi tác vụ chuyên dụng. Apple tích hợp cho MV972 GPU đồ họa Intel Iris Plus Graphics 655 cấu hình cực mạnh, với 128MB eDRAM, Macbook
-                    Pro 13 inch MV972 2019 cho khả năng xử lý đồ họa khủng hơn rất nhiều. Mọi thể loại game 3D hay các tác vụ đồ họa hạng nặng đều sẽ diễn
-                    ra một cách trơn tru, mượt mà và nhanh chóng. Bạn có thể thao tác thoải mái với những ứng dụng hạng nặng như rending video 3D; tạo hoặc thêm
-                    các hiệu ứng đặc biệt; xử lý các bản nhạc đa phương tiện; lập trình nhiều phần mềm phức tạp; … mọi thứ đều diễn ra nhanh chóng như ý muốn. </p>
-                <p>2. Hiệu năng cực mạnh của Macbook Pro 13 inch MV9A2</p>
-                <span id="dots">...</span><span id="more">
-                        <p>Macbook Pro nâng máy tính xách tay lên một cấp độ hoàn toàn mới với hiệu năng lực
-                             mạnh mẽ và tính di động linh hoạt mà sản phẩm đạt được. Với bộ xử lý
-                              và bộ nhớ hiệu suất cao, đồ họa tiên tiến, lưu trữ nhanh đã mang đến
-                               nhiều chọn lựa thuật toán để có trải nghiệm hiệu quả hơn.
-
-                            Cụ thể, Macbook Pro 13 inch được tích hợp Bộ xử lý Intel Core i5 lõi
-
-                            đạt tốc độ lên đến 2,8 GHz và hiệu suất đạt 4,7 GHz hỗ trợ bởi công
-                             nghệ Turbo Boost. Chưa hết, Đồ họa Radeon Pro Vega chắc chắn mang
-                             đến nhiều công cụ hỗ trợ cực thông minh cho sản phẩm.
-
-                            Hiệu năng cực mạnh của Macbook Pro 13 inch MV9A2</p>
-
-
-
-                <!-- phần bị ẩn và hiện ra sau khi nhấn "Xem thêm" -->
-
-                    <img src="../images/macbook/macbook13/macbook12.3.jpg">
-                 <p>  3.  Thunderbolt 3.0 vô cùng mạnh mẽ và linh hoạt</p>
-                       <p>Thunderbolt 3.0 là sự kết hợp giữa băng thông cực cao với tính linh hoạt tối ưu từ tiêu chuẩn công nghiệp USB Type-C,
-                           tạo nên một cổng kết nối tuy phổ biến nhưng thực chất đã được nâng cấp, cùng lúc làm cả việc truyền dữ liệu, sạc và làm
-                            đầu ra video, chỉ trong một cổng duy nhất, thông lượng lên tới 40Gb/giây – tức băng thông nhanh gấp đôi so với Thunderbolt 2.0. Macbook Pro
-                             13 inch MV972 2019 sở hữu tổng cộng bốn cổng Thunderbolt 3.0, với 2 cổng chia đều mỗi bên thân máy, rất thuận tiện cho người dùng nếu bạn muốn
-                              sử dụng mọi cổng kết nối cùng lúc (hiện đã có thể dễ dàng kết nối với cáp hoặc bộ chuyển đổi).</p>
-
-                    </span> </p>
+                <p>${smartphone.mo_ta_2}</p>
+                <p>2. Hiệu năng cực mạnh</p>
                 <!-- phần nhấn để hiện thị display bị mất -->
-                <a class="mota1-2-button" onclick="myFunction()" id="mota1-2-button" >
-                    Xem thêm
-                </a>
+
             </div>
             <div class="col-xl-5 col-lg-5 pt-5 pt-lg-0">
                 <div class="lt-table-box technical-info" id="id_21547" style="margin-top: 0px;">
@@ -262,89 +218,59 @@
                             <tbody>
                             <tr style="display: table-row;">
                                 <td>Màn hình</td>
-                                <td>OLED</td>
+                                <td>${smartphone.man_hinh}</td>
                             </tr>
 
 
                             <tr style="display: table-row;">
                                 <td>Kích thước màn hình:</td>
-                                <td>13.3 inch</td>
+                                <td>${smartphone.kich_thuoc_man_hinh}</td>
                             </tr>
 
 
                             <tr style="display: table-row;">
                                 <td>Hệ điều hành:</td>
-                                <td>MacOS</td>
+                                <td>${smartphone.he_dieu_hanh}</td>
                             </tr>
 
 
                             <tr style="display: table-row;">
                                 <td>C:</td>
-                                <td>Apple A14 Bionic 6 nhân
+                                <td>${smartphone.cpu}
                                 </td>
                             </tr>
 
 
                             <tr style="display: table-row;">
                                 <td>Camera trước</td>
-                                <td>12</td>
+                                <td>${smartphone.camera_truoc}</td>
                             </tr>
 
                             <tr style="display: table-row;">
                                 <td>Camera sau:</td>
-                                <td>2 camera 12 MP</td>
+                                <td>Camera_sau</td>
                             </tr>
 
 
                             <tr style="display: table-row;">
                                 <td>Bộ nhớ:</td>
-                                <td>512 GB</td>
+                                <td>${smartphone.bo_nho}</td>
                             </tr>
 
                             <tr style="display: table-row;">
                                 <td>Ram:</td>
-                                <td>8 GB</td>
+                                <td>${smartphone.ram}</td>
                             </tr>
 
                             <tr style="display: table-row;">
                                 <td>Thẻ SIM</td>
-                                <td> 1 Nano </td>
+                                <td>${smartphone.the_sim}</td>
                             </tr>
 
 
                             <tr style="display: table-row;">
                                 <td>Pin:</td>
-                                <td>2227 mAh, có sạc nhanh</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Bảo mật nâng cao</td>
-                                <td>Mở khoá khuôn mặt Face ID</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Tính năng đặc biệt</td>
-                                <td>Kháng nước, kháng bụi</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Radio</td>
-                                <td>Không</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>CPU:</td>
-                                <td>Apple A14 Bionic 6 nhân</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Thiết kế:</td>
-                                <td>Nguyên khối</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Chất liệu</td>
-                                <td>Khung nhôm và mặt lưng kính cường  </td>
+                                <td>${smartphone.pin}</td>
                             </tr>
                             </tbody></table>
 
@@ -358,7 +284,7 @@
                     <ul class="fs-dtrtbig">
                         <li><span><i class="fas fa-star"></i></span></li>
                         <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="fas fa-star"></i></span> </span></li>
+                        <li><span><i class="fas fa-star"></i></span></li>
                         <li><span ><i class="far fa-star"></i></span></li>
                         <li><span ><i class="far fa-star"></i></span></li>
                     </ul><br>
@@ -446,14 +372,24 @@
     </div>
 </div>
 <!-- //Single Page -->
+<%@include file="footer.jsp"%>
 
-
-<%@ include file="View/web/footer.jsp" %>
-
+<!-- ============================================================== -->
+<script src="<c:url value='/decorator/admin/plugins/bower_components/jquery/dist/jquery.min.js'/>"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="<c:url value='/decorator/admin/plugins/bower_components/popper.js/dist/umd/popper.min.js'/>"></script>
+<script src="<c:url value='/decorator/admin/bootstrap/dist/js/bootstrap.min.js'/>"></script>
+<script src="<c:url value='/decorator/admin/js/app-style-switcher.js'/>"></script>
+<!--Wave Effects -->
+<script src="/decorator/admin/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="<c:url value='/decorator/admin/js/sidebarmenu.js'/>"></script>
+<!--Custom JavaScript -->
+<script src="<c:url value='/decorator/admin/js/custom.js'/>"></script>
 
 <!-- js-files -->
 <!-- jquery -->
-<script src="js/jquery-2.2.3.min.js"></script>
+<script src="<c:url value='/decorator/web/js/jquery-2.2.3.min.js'/>"></script>
 <!-- //jquery -->
 
 <!-- nav smooth scroll -->
@@ -474,7 +410,7 @@
 <!-- //nav smooth scroll -->
 
 <!-- popup modal (for location)-->
-<script src="js/jquery.magnific-popup.js"></script>
+<script src="<c:url value='/decorator/web/js/jquery.magnific-popup.js'/>"></script>
 <script>
     $(document).ready(function () {
         $('.popup-with-zoom-anim').magnificPopup({
@@ -494,7 +430,7 @@
 <!-- //popup modal (for location)-->
 
 <!-- cart-js -->
-<script src="js/minicart.js"></script>
+<script src="<c:url value='/decorator/web/js/minicart.js'/>"></script>
 <script>
     paypals.minicarts.render(); //use only unique class names other than paypals.minicarts.Also Replace same class name in css and minicart.min.js
 
@@ -536,12 +472,54 @@
 </script>
 <!-- //password-script -->
 
-<!-- scroll seller -->
-<script src="js/scroll.js"></script>
-<!-- //scroll seller -->
+<!-- quantity -->
+<script>
+    $('.value-plus').on('click', function () {
+        var divUpd = $(this).parent().find('.value'),
+            newVal = parseInt(divUpd.text(), 10) + 1;
+        divUpd.text(newVal);
+    });
+
+    $('.value-minus').on('click', function () {
+        var divUpd = $(this).parent().find('.value'),
+            newVal = parseInt(divUpd.text(), 10) - 1;
+        if (newVal >= 1) divUpd.text(newVal);
+    });
+</script>
+
+
+<!--quantity-->
+<script>
+    $(document).ready(function (c) {
+        $('.close1').on('click', function (c) {
+            $('.rem1').fadeOut('slow', function (c) {
+                $('.rem1').remove();
+            });
+        });
+    });
+</script>
+<script>
+    $(document).ready(function (c) {
+        $('.close2').on('click', function (c) {
+            $('.rem2').fadeOut('slow', function (c) {
+                $('.rem2').remove();
+            });
+        });
+    });
+</script>
+<script>
+    $(document).ready(function (c) {
+        $('.close3').on('click', function (c) {
+            $('.rem3').fadeOut('slow', function (c) {
+                $('.rem3').remove();
+            });
+        });
+    });
+</script>
+<!-- //quantity -->
 
 <!-- smoothscroll -->
-<script src="js/SmoothScroll.min.js"></script>
+<script src="<c:url value='/decorator/web/js/SmoothScroll.min.js'/>"></script>
 <!-- //smoothscroll -->
 
 <!-- start-smooth-scrolling -->
@@ -580,9 +558,8 @@
 <!-- //smooth-scrolling-of-move-up -->
 
 <!-- for bootstrap working -->
-<script src="js/bootstrap.js"></script>
+<script src="<c:url value='/decorator/web/js/bootstrap.js'/>"></script>
 <!-- //for bootstrap working -->
 <!-- //js-files -->
 </body>
-
 </html>

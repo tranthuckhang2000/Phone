@@ -438,11 +438,56 @@ public class SmartphoneEntity {
 
     }
 
+    public Smartphone getSmartphoneByMasp(String masp){
+        Smartphone smartphone = null;
+        try {
+            Connection con = ConnectionDB.getConnection();
+            PreparedStatement ps = con.prepareStatement("select * from SMART_PHONE where masp like ?");
+            ps.setString(1, masp);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+               smartphone = new Smartphone(
+                        rs.getString(1),
+                        rs.getString(2),
+                        rs.getInt(3),
+                        rs.getString(4),
+                        rs.getInt(5),
+                        rs.getString(6),
+                        rs.getString(7),
+                        rs.getString(8),
+                        rs.getString(9),
+                        rs.getString(10),
+                        rs.getString(11),
+                        rs.getString(12),
+                        rs.getString(13),
+                        rs.getString(14),
+                        rs.getString(15),
+                        rs.getString(16),
+                        rs.getString(17),
+                        rs.getString(18),
+                        rs.getString(19),
+                        rs.getString(20),
+                        rs.getString(21),
+                        rs.getString(22),
+                        rs.getString(23),
+                        rs.getInt(24)
+                );
+            }
+            return smartphone;
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+
+        }
+        return null;
+
+    }
+
 
     public static void main(String[] args) throws Exception {
 
         SmartphoneEntity se = new SmartphoneEntity();
-        se.createSmartphone("ip", "iphone moi", 123, "22/23/2001", 12, "111", "222", "333", "vang", "apple", "6.8", "6.7", "ios", "a16", "12", "34", "512", "12", "qwe", "12345", "777", "888", "99", 9);
+        System.out.println(se.getSmartphoneByMasp("ip0002"));
+//        se.createSmartphone("ip", "iphone moi", 123, "22/23/2001", 12, "111", "222", "333", "vang", "apple", "6.8", "6.7", "ios", "a16", "12", "34", "512", "12", "qwe", "12345", "777", "888", "99", 9);
     }
 
 }

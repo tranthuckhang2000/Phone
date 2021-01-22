@@ -53,7 +53,7 @@
                                             <img class="img-size-pro" src="${d.hinh_mo_ta_1}"alt="">
                                             <div class="men-cart-pro">
                                                 <div class="inner-men-cart-pro">
-                                                    <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                                    <a href="Product_Detail?idProduct=${d.masp}" class="link-product-add-cart">Xem Nhanh</a>
                                                 </div>
                                             </div>
                                             <span class="product-new-top">Hot</span>
