@@ -130,7 +130,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="ModifySmartphone" method="post">
+                                        <form action="UpdateSmartphone" method="post">
 
                                             <div class="form-group">
                                                 <label class="col-form-label">Mã Sản Phẩm</label>
@@ -152,7 +152,7 @@
 
                                             <div class="form-group">
                                                 <label class="col-form-label">Ngay ra mắt</label>
-                                                <input type="Date" class="form-control" value="${d.ngay_ra_mat}" placeholder=" "
+                                                <input type="text" class="form-control" value="${d.ngay_ra_mat}" placeholder=" "
                                                        name="ngay_ra_mat" required="">
 
                                             </div>
@@ -166,21 +166,21 @@
                                             <div class="form-group">
                                                 <label class="col-form-label">Ảnh mô tả 1</label>
                                                 <input type="text" class="form-control" value="${d.hinh_mo_ta_1}" placeholder=" "
-                                                       name="anh_mo_ta_1" required="">
+                                                       name="hinh_mo_ta_1" required="">
 
                                             </div>
 
                                             <div class="form-group">
                                                 <label class="col-form-label">Ảnh mô tả 2</label>
                                                 <input type="text" class="form-control" value="${d.hinh_mo_ta_2}" placeholder=" "
-                                                       name="anh_mo_ta_2" required="">
+                                                       name="hinh_mo_ta_2" required="">
 
                                             </div>
 
                                             <div class="form-group">
                                                 <label class="col-form-label">Ảnh mô tả 3</label>
                                                 <input type="text" class="form-control" value="${d.hinh_mo_ta_3}" placeholder=" "
-                                                       name="anh_mo_ta_3" required="">
+                                                       name="hinh_mo_ta_3" required="">
 
                                             </div>
 

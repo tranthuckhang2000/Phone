@@ -11,13 +11,12 @@ import java.io.IOException;
 public class UpdateSmartphone extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String mssp = request.getParameter("masp");
+       response.setContentType("text/html; charset = UTF-8");
+       request.setCharacterEncoding("UTF-8");
+        String masp = request.getParameter("masp");
+        System.out.println(masp);
         String ten_san_pham = request.getParameter("ten_san_pham");
+        System.out.println(ten_san_pham);
         int gia = Integer.parseInt(request.getParameter("gia"));
         String ngay_ra_mat = request.getParameter("ngay_ra_mat");
         int gia_khuyen_mai = Integer.parseInt(request.getParameter("gia_khuyen_mai"));
@@ -41,7 +40,15 @@ public class UpdateSmartphone extends HttpServlet {
         String mo_ta_3 = request.getParameter("mo_ta_3");
         int so_luong = Integer.parseInt(request.getParameter("so_luong"));
         SmartphoneEntity se = new SmartphoneEntity();
-        se.updateSmartphone(mssp, ten_san_pham, gia, ngay_ra_mat, gia_khuyen_mai, hinh_mo_ta_1, hinh_mo_ta_2, hinh_mo_ta_3, mau, thuong_hieu, man_hinh, kich_thuoc_man_hinh, he_dieu_hanh, camera_truoc, camera_truoc, camera_sau, bo_nho, ram, the_sim, pin, mo_ta_1, mo_ta_2, mo_ta_3, so_luong);
-        request.getRequestDispatcher("http://localhost:8080/Group_Project/Managent_Product");
+        se.updateSmartphone(masp, ten_san_pham, gia, ngay_ra_mat,
+                gia_khuyen_mai, hinh_mo_ta_1, hinh_mo_ta_2, hinh_mo_ta_3, mau, thuong_hieu,
+                man_hinh, kich_thuoc_man_hinh, he_dieu_hanh, cpu,camera_truoc,
+                camera_sau, bo_nho, ram, the_sim, pin, mo_ta_1, mo_ta_2, mo_ta_3, so_luong);
+        response.sendRedirect("Managent_Product");
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+           doGet(request, response);
     }
 }
