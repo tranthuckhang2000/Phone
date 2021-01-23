@@ -221,131 +221,155 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title-pro">Sửa Thông Ti Sản Phẩm</h5>
+                <h5 class="modal-title-pro">Chỉnh Sửa Thông Tin Sản Phẩm</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"></span>
                 </button>
             </div>
             <div class="modal-body">
-                <form action="#" method="post">
+                <form action="AddSmartphone" method="post">
+
                     <div class="form-group">
                         <label class="col-form-label">Tên Sản Phẩm</label>
-                        <input type="text" class="form-control" placeholder=" " name="Name" required="">
+                        <input type="text" value="${d.ten_san_pham}" class="form-control" placeholder=" "
+                               name="ten_san_pham" required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Giá Bán</label>
-                        <input type="number" class="form-control" placeholder=" " name="Price" required="">
+                        <input type="number" class="form-control" value="${d.gia}" placeholder=" " name="gia"
+                               required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Ngay ra mắt</label>
-                        <input type="Date" class="form-control" placeholder=" " name="Date" required="">
+                        <input type="Date" class="form-control" value="${d.ngay_ra_mat}" placeholder=" "
+                               name="ngay_ra_mat" required="">
 
                     </div>
 
                     <div class="form-group">
-                        <label class="col-form-label">Giá Khuyễn Mãi</label>
-                        <input type="number" class="form-control" placeholder=" " name="PriceSale" required="">
-                    </div>
-                    <div class="form-group">
-                        <label class="col-form-label">Chọn Ảnh Mô Tả 1</label>
-                        <input class="upload-file" name="Image1" type="file" id="myFile4" name="filename1">
+                        <label class="col-form-label">Giá Khuyến Mãi</label>
+                        <input type="number" class="form-control" value="${d.gia_khuyen_mai}" placeholder=" "
+                               name="gia_khuyen_mai" required="">
                     </div>
 
                     <div class="form-group">
-                        <label class="col-form-label">Chọn Ảnh Mô Tả 2</label>
-                        <input class="upload-file" name="Image2" type="file" id="myFile5" name="filename2">
+                        <label class="col-form-label">Ảnh mô tả 1</label>
+                        <input type="text" class="form-control" value="${d.anh_mo_ta_1}" placeholder=" "
+                               name="anh_mo_ta_1" required="">
+
                     </div>
 
                     <div class="form-group">
-                        <label class="col-form-label">Chọn Ảnh Mô Tả 3</label>
-                        <input class="upload-file" name="Image3" type="file" id="myFile6" name="filename3">
+                        <label class="col-form-label">Ảnh mô tả 2</label>
+                        <input type="text" class="form-control" value="${d.anh_mo_ta_2}" placeholder=" "
+                               name="anh_mo_ta_2" required="">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-form-label">Ảnh mô tả 3</label>
+                        <input type="text" class="form-control" value="${d.anh_mo_ta_3}" placeholder=" "
+                               name="anh_mo_ta_3" required="">
+
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Màu</label>
-                        <input type="text" class="form-control" placeholder=" " name="Coler" required="">
+                        <input type="text" class="form-control" value="${d.mau}" placeholder=" " name="mau" required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Thương Hiệu</label>
-                        <input type="text" class="form-control" placeholder=" " name="Brand" required="">
+                        <input type="text" class="form-control" value="${d.thuong_hieu}" placeholder=" "
+                               name="thuong_hieu" required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Màn Hình</label>
-                        <input type="text" class="form-control" placeholder=" " name="Display" required="">
+                        <input type="text" class="form-control" value="${d.man_hinh}" placeholder=" " name="man_hinh"
+                               required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Kích Thước Màn Hình</label>
-                        <input type="text" class="form-control" placeholder=" " name="Sizedisplay" required="">
+                        <input type="text" class="form-control" value="${d.kich_thuoc_man_hinh}" placeholder=" "
+                               name="kich_thuoc_man_hinh" required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Hệ Điều Hành</label>
-                        <input type="text" class="form-control" placeholder=" " name="OS" required="">
+                        <input type="text" class="form-control" value="${d.he_dieu_hanh}" placeholder=" "
+                               name="he_dieu_hanh" required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">CPU</label>
-                        <input type="text" class="form-control" placeholder=" " name="Cpu" required="">
+                        <input type="text" class="form-control" value="${d.cpu}" placeholder=" " name="cpu" required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Camera Trước</label>
-                        <input type="text" class="form-control" placeholder=" " name="Camtruoc" required="">
+                        <input type="text" class="form-control" value="${d.camera_truoc}" placeholder=" "
+                               name="camera_truoc" required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Camera Sau</label>
-                        <input type="text" class="form-control" placeholder=" " name="Camsau" required="">
+                        <input type="text" class="form-control" value="${d.camera_sau}" placeholder=" "
+                               name="camera_sau" required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Bộ Nhớ</label>
-                        <input type="text" class="form-control" placeholder=" " name="Rom" required="">
+                        <input type="text" class="form-control" value="${d.bo_nho}" placeholder=" " name="bo_nho"
+                               required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Ram</label>
-                        <input type="text" class="form-control" placeholder=" " name="Ram" required="">
+                        <input type="text" class="form-control" value="${d.ram}" placeholder=" " name="ram" required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Thẻ Sim</label>
-                        <input type="text" class="form-control" placeholder=" " name="Sim" required="">
+                        <input type="text" class="form-control" value="${d.the_sim}" placeholder=" " name="sim"
+                               required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Pin</label>
-                        <input type="text" class="form-control" placeholder=" " name="Pin" required="">
+                        <input type="text" class="form-control" value="${d.pin}" placeholder=" " name="pin" required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Mô Tả 1</label>
-                        <input type="area" class="form-control" placeholder=" " name="Desciption1" required="">
+                        <input type="area" class="form-control" value="${d.mo_ta_1}" placeholder=" " name="mo_ta_1"
+                               required="">
                     </div>
 
 
                     <div class="form-group">
                         <label class="col-form-label">Mô Tả 2</label>
-                        <input type="area" class="form-control" placeholder=" " name="Desciption2" required="">
+                        <input type="area" class="form-control" value="${d.mo_ta_2}" placeholder=" " name="mo_ta-2"
+                               required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Mô Tả 3</label>
-                        <input type="area" class="form-control" placeholder=" " name="Desciption3" required="">
+                        <input type="area" class="form-control" value="${d.mo_ta_3}" placeholder=" " name="mo_ta_3"
+                               required="">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label">Số Lượng</label>
-                        <input type="number" class="form-control" placeholder=" " name="Amount" required="">
+                        <input type="number" class="form-control" value="${d.so_luong}" placeholder=" " name="so_luong"
+                               required="">
                     </div>
 
                     <div class="btn-sum">
-                        <input type="submit" class="form-control-pro" value="Lu">
+                        <input type="submit" class="form-control-pro" value="Thêm">
                     </div>
                 </form>
             </div>
@@ -362,7 +386,7 @@
     <!-- ============================================================== -->
     <!-- Topbar header - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <%@include file="header.jsp"%>
+    <%@include file="header.jsp" %>
 
     <!-- ============================================================== -->
     <!-- End Left Sidebar - style you can find in sidebar.scss  -->
@@ -450,11 +474,20 @@
                                                 </div>
                                             </td>
                                             <td class="invert">${d.gia}<u>đ</u></td>
+                                            </td>
+                                                <%--                                            <td class="invert"><i  class="fas fa-edit"></i>--%>
+                                                <%--                                            </td>--%>
+
+                                            <td class="invert">
+                                                <div class="rem">
+                                                    <a href="ModifySmartphone?idProduct=${d.masp}"
+                                                       class="text-white">
+                                                        <i style="font-size: 30px" class="fas fa-edit"></i></a>
+                                                </div>
                                             <td class="invert">
                                                 <div class="rem">
                                                     <div class="close1"></div>
                                                 </div>
-                                            </td>
                                         </tr>
                                     </c:forEach>
                                     </tbody>
@@ -475,7 +508,7 @@
             <!-- ============================================================== -->
             <!-- Right sidebar -->
 
-            <%@include file="footer.jsp"%>
+            <%@include file="footer.jsp" %>
             <!-- ============================================================== -->
             <!-- .right-sidebar -->
             <!-- ============================================================== -->

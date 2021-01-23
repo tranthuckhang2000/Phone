@@ -389,9 +389,9 @@ public class SmartphoneEntity {
         ps.setString(4, ngay_ra_mat);
         ps.setInt(5, gia_khuyen_mai);
         ps.setString(6, hinh_mo_ta_1);
-        ps.setString(7, hinh_mo_ta_2);
-        ps.setString(8, hinh_mo_ta_3);
-        ps.setString(9, mau);
+        ps.setString(7, mau);
+        ps.setString(8, hinh_mo_ta_2);
+        ps.setString(9, hinh_mo_ta_3);
         ps.setString(10, thuong_hieu);
         ps.setString(11, man_hinh);
         ps.setString(12, kich_thuoc_man_hinh);
@@ -405,7 +405,7 @@ public class SmartphoneEntity {
         ps.setString(20, pin);
         ps.setString(21, mo_ta_1);
         ps.setString(22, mo_ta_2);
-        ps.setString(23, hinh_mo_ta_3);
+        ps.setString(23, mo_ta_3);
         ps.setInt(24, so_luong);
         ps.executeUpdate();
     }
@@ -430,12 +430,51 @@ public class SmartphoneEntity {
     }
 
     //    tạo một MSSP mới
-
     public String createNewMASP(String masp) throws SQLException, ClassNotFoundException {
         int newMASP = findMaxMASP(masp) + 1;
         String result = masp + newMASP;
         return result;
 
+    }
+
+    // Update dữ liệu cho smartphone
+
+    public void updateSmartphone(String masp, String ten_san_pham, int gia, String ngay_ra_mat, int gia_khuyen_mai, String hinh_mo_ta_1, String mau, String hinh_mo_ta_2, String hinh_mo_ta_3, String thuong_hieu, String man_hinh, String kich_thuoc_man_hinh, String he_dieu_hanh, String cpu, String camera_truoc, String camera_sau, String bo_nho, String ram, String the_sim, String pin, String mo_ta_1, String mo_ta_2, String mo_ta_3, int so_luong){
+        try {
+            Connection con = ConnectionDB.getConnection();
+            String sql = "update smart_phone set masp = ?, ten_san_pham = ?, gia = ?, ngay_ra_mat = ?, gia_khuyen_mai = ?, hinh_mo_ta_1 = ?, mau = ?, hinh_mo_ta_2 = ?, hinh_mo_ta_3 = ?, thuong_hieu = ?, man_hinh = ?, kich_thuoc_man_hinh = ?, he_dieu_hanh = ?, cpu = ?, camera_truoc = ?, camera_sau = ?, bo_nho = ?, ram = ?, the_sim = ?, pin = ?, mo_ta_1 = ?, mo_ta_2 = ?, mo_ta_3 = ?, so_luong = ?  where masp = ? ";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, masp);
+            ps.setString(2, ten_san_pham);
+            ps.setInt(3, gia);
+            ps.setString(4, ngay_ra_mat);
+            ps.setInt(5, gia_khuyen_mai);
+            ps.setString(6, hinh_mo_ta_1);
+            ps.setString(7, mau);
+            ps.setString(8, hinh_mo_ta_2);
+            ps.setString(9, hinh_mo_ta_3);
+            ps.setString(10, thuong_hieu);
+            ps.setString(11, man_hinh);
+            ps.setString(12, kich_thuoc_man_hinh);
+            ps.setString(13, he_dieu_hanh);
+            ps.setString(14, cpu);
+            ps.setString(15, camera_truoc);
+            ps.setString(16, camera_sau);
+            ps.setString(17,bo_nho);
+            ps.setString(18, ram);
+            ps.setString(19, the_sim);
+            ps.setString(20, pin);
+            ps.setString(21, mo_ta_1);
+            ps.setString(22, mo_ta_2);
+            ps.setString(23, mo_ta_3);
+            ps.setInt(24, so_luong);
+            ps.setString(25, masp);
+            ps.executeUpdate();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
 
     public Smartphone getSmartphoneByMasp(String masp){
@@ -486,8 +525,10 @@ public class SmartphoneEntity {
     public static void main(String[] args) throws Exception {
 
         SmartphoneEntity se = new SmartphoneEntity();
-        System.out.println(se.getSmartphoneByMasp("ip0002"));
+//        System.out.println(se.getSmartphoneByMasp("ip0003"));
 //        se.createSmartphone("ip", "iphone moi", 123, "22/23/2001", 12, "111", "222", "333", "vang", "apple", "6.8", "6.7", "ios", "a16", "12", "34", "512", "12", "qwe", "12345", "777", "888", "99", 9);
+        se.updateSmartphone("ip21", "iphone samsung", 123, "22/23/2001", 12, "111", "222", "333", "vang", "apple", "6.8", "6.7", "ios", "a16", "12", "34", "512", "12", "qwe", "12345", "777", "888", "99", 9);
+
     }
 
 }

@@ -10,9 +10,9 @@ public class Smartphone implements Serializable {
     private String ngay_ra_mat;
     private int gia_khuyen_mai;
     private String hinh_mo_ta_1;
+    private String mau;
     private String hinh_mo_ta_2;
     private String hinh_mo_ta_3;
-    private String mau;
     private String thuong_hieu;
     private String man_hinh;
     private String kich_thuoc_man_hinh;
@@ -29,7 +29,7 @@ public class Smartphone implements Serializable {
     private String mo_ta_3;
     private int so_luong;
 
-    public Smartphone(String masp, String ten_san_pham, int gia, String ngay_ra_mat, int gia_khuyen_mai, String hinh_mo_ta_1,String hinh_mo_ta_2, String hinh_mo_ta_3,  String mau,  String thuong_hieu, String man_hinh, String kich_thuoc_man_hinh, String he_dieu_hanh, String cpu, String camera_truoc, String camera_sau, String bo_nho, String ram, String the_sim, String pin, String mo_ta_1, String mo_ta_2, String mo_ta_3, int so_luong) {
+    public Smartphone(String masp, String ten_san_pham, int gia, String ngay_ra_mat, int gia_khuyen_mai, String hinh_mo_ta_1, String mau, String hinh_mo_ta_2, String hinh_mo_ta_3,   String thuong_hieu, String man_hinh, String kich_thuoc_man_hinh, String he_dieu_hanh, String cpu, String camera_truoc, String camera_sau, String bo_nho, String ram, String the_sim, String pin, String mo_ta_1, String mo_ta_2, String mo_ta_3, int so_luong) {
         this.masp = masp;
         this.ten_san_pham = ten_san_pham;
         this.gia = gia;
@@ -46,7 +46,7 @@ public class Smartphone implements Serializable {
         this.cpu = cpu;
         this.camera_truoc = camera_truoc;
         this.camera_sau = camera_sau;
-        this.bo_nho = Smartphone.this.bo_nho;
+        this.bo_nho = bo_nho;
         this.ram = ram;
         this.the_sim = the_sim;
         this.pin = pin;
