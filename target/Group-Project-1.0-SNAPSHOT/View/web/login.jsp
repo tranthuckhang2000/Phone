@@ -13,8 +13,9 @@
 <head>
     <title>Đăng Nhập</title>
     <!-- Meta tag Keywords -->
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
-    <link rel="SHORTcut icon" href="/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../../images/favicon.png"/>
+    <link rel="SHORTcut icon" href="../../images/favicon.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8"/>
     <meta name="keywords"
