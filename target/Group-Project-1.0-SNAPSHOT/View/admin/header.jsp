@@ -23,7 +23,7 @@
             <!-- ============================================================== -->
             <!-- Logo -->
             <!-- ============================================================== -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="yyy.html">
                 <!-- Logo icon -->
                 <!--                        <b class="logo-icon">-->
                 <!--                            &lt;!&ndash; Dark Logo icon &ndash;&gt;-->
@@ -32,7 +32,7 @@
                 <!--End Logo icon -->
                 <!-- Logo text -->
                 <h1 class="text-center">
-                    <a style="color: #d70018" href="index.html" class="font-weight-bold font-tahoma">
+                    <a style="color: #d70018" href="yyy.html" class="font-weight-bold font-tahoma">
                         CellApples
                     </a>
                 </h1>

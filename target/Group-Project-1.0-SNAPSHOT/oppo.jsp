@@ -55,7 +55,7 @@
         <div class="container">
             <ul class="w3_short">
                 <li>
-                    <a href="index.html">Trang chủ</a>
+                    <a href="yyy.html">Trang chủ</a>
                     <i>|</i>
                 </li>
                 <li>iphone</li>
@@ -72,7 +72,7 @@
         <div class="container">
             <ul class="w3_short">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="yyy.html">Home</a>
                     <i>|</i>
                 </li>
                 <li>Macbook <i>|</i></li>

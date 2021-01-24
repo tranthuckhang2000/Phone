@@ -13,8 +13,9 @@
 <head>
     <title>Đăng Nhập</title>
     <!-- Meta tag Keywords -->
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
-    <link rel="SHORTcut icon" href="/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../../images/favicon.png"/>
+    <link rel="SHORTcut icon" href="../../images/favicon.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8"/>
     <meta name="keywords"
@@ -37,7 +38,7 @@
         <div class="container">
             <ul class="w3_short">
                 <li>
-                    <a href="../index.html">Trang chủ</a>
+                    <a href="/">Trang chủ</a>
                     <i>|</i>
                 </li>
                 <li>đăng nhập</li>
@@ -51,7 +52,8 @@
 
         <form class="login-form" method="post" action="login">
             <h3>Đăng Nhập</h3>
-            <input type="text" id="ten_dang_nhap" name="ten_dang_nhap" placeholder="Tên đăng nhập"/>
+            <p class="text-danger">${mess}hhhh</p>
+            <input  type="text" id="ten_dang_nhap" name="ten_dang_nhap" placeholder="Tên đăng nhập"/>
             <input type="password" id="mat_khau" name="mat_khau" placeholder="Mật khẩu"/>
             <button type="submit">Đăng nhập</button>
             <p class="message"><a href="../forgotpass.html">Bạn không nhớ mật khẩu ? </a></p>

@@ -66,7 +66,7 @@
         <div class="container">
             <ul class="w3_short">
                 <li>
-                    <a href="index.html">Trang chủ</a>
+                    <a href="yyy.html">Trang chủ</a>
                     <i>|</i>
                 </li>
                 <li>${smartphone.ten_san_pham}</li>

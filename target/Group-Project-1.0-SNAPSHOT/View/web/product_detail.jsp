@@ -67,7 +67,7 @@
         <div class="container">
             <ul class="w3_short">
                 <li>
-                    <a href="index.html">Trang chủ</a>
+                    <a href="yyy.html">Trang chủ</a>
                     <i>|</i>
                 </li>
                 <li>${d.ten_san_pham}</li>
@@ -88,10 +88,10 @@
             <div class="col-lg-5 col-md-8 single-right-left ">
                 <div class="grid images_3_of_2">
                     <div class="flexslider">
-                        <ul class="slides">
+                        <ul class="slides">${d.hinh_mo_ta_1}
                             <li data-thumb="${d.hinh_mo_ta_1}">
                                 <div class="thumb-image">
-                                    <img src="${d.hinh_mo_ta_2}" data-imagezoom="true" class="img-fluid" alt=""> </div>
+                                    <img src="${d.hinh_mo_ta_1}" data-imagezoom="true" class="img-fluid" alt=""> </div>
                             </li>
                             <li data-thumb="${d.hinh_mo_ta_1}">
                                 <div class="thumb-image">
@@ -454,6 +454,20 @@
     });
 </script>
 <!-- //cart-js -->
+<!-- flexslider -->
+<link rel="stylesheet" href="decorator/web/flexslider.css" type="text/css" media="screen" />
+
+<script src="/decorator/web/js/jquery.flexslider.js"></script>
+<script>
+    // Can also be used with $(document).ready()
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails"
+        });
+    });
+</script>
+<!-- //FlexSlider-->
 
 <!-- password-script -->
 <script>

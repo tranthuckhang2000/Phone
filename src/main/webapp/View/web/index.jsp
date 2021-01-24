@@ -5,731 +5,929 @@
   Time: 18:49
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <html>
 
 <head>
-    <title>Cell Apples</title>
+    <title>Cellphones</title>
     <!-- Meta tag Keywords -->
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
-    <link rel="SHORTcut icon" href="../images/favicon.png">
+    <link rel="SHORTcut icon" href="/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../../images/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <meta name="keywords" content="Electro Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
-    />
-    <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
-    <!-- //Meta tag Keywords -->
-
-    <!-- Custom-Files -->
-    <link href="../css/web/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Bootstrap css -->
-    <link href="../css/web/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Main css -->
-    <link rel="stylesheet" href="../css/web/fontawesome-all.css">
-    <!-- Font-Awesome-Icons-CSS -->
-    <link href="../css/web/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- pop-up-box -->
-    <link href="../css/web/menu.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- menu style -->
-    <!-- //Custom-Files -->
-
-    <!-- web fonts -->
-    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
-          rel="stylesheet">
-    <!-- //web fonts -->
+    <meta name="keywords" content="Electro Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
 
 </head>
 
 <body>
+<%@include file="header.jsp"%>-->
 
-
-<!-- banner-2 -->
-<!--	<div class="page-head_agile_info_w3l">-->
-
-</div>
-<!-- //banner-2 -->
-<!-- page -->
-<div class="services-breadcrumb">
-    <div class="agile_inner_breadcrumb">
-        <div class="container">
-            <ul class="w3_short">
-                <li>
-                    <a href="../index.html">Home</a>
-                    <i>|</i>
-                </li>
-                <li>Macbook <i>|</i></li>
-                <li>Macbook Pro 13 inch MV9A2 8GB/512GB 2019</li>
-            </ul>
+<!-- banner -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- Indicators-->
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item item1 active">
+            <div class="container">
+                <div class="w3l-space-banner">
+                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
+                        <p>Hoàn Tiền Lên Đến
+                            <span>10%</span></p>
+                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Iphone
+                            <span>Giá </span>
+                            Tốt
+                        </h3>
+                        <a class="button2" href="iphone.jsp">Mua Ngay </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item item2">
+            <div class="container">
+                <div class="w3l-space-banner">
+                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
+                        <p>Nâng Cao
+                            <span>Hiệu Suất</span> Hoạt Động</p>
+                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Siêu Máy Tính
+                            <span>Macbook Pro</span>
+                        </h3>
+                        <a class="button2" href="iphone.jsp">Mua Ngay </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item item3">
+            <div class="container">
+                <div class="w3l-space-banner">
+                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
+                        <p>Hoàn Tiền
+                            <span>Lên Đến 10%</span></p>
+                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Tiêu Chuẩn
+                            <span>Mới</span>
+                        </h3>
+                        <a class="button2" href="../../macbook.html">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item item4">
+            <div class="container">
+                <div class="w3l-space-banner">
+                    <div class="carousel-caption p-lg-5 p-sm-4 p-3">
+                        <p>Nhận Ngay
+                            <span>Phiếu Giảm Giá 10%</span></p>
+                        <h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Ngay Trong
+                            <span>Hôm Nay</span>
+                        </h3>
+                        <a class="button2" href="../../macbook13.6.html">Mua Ngay </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
-<!-- //page -->
+<!-- //banner -->
 
-<!-- Single Page -->
-<div class="banner-bootom-w3-agileits py-5">
+<!-- top Products -->
+<div class="ads-grid py-sm-5 py-4">
     <div class="container py-xl-4 py-lg-2">
         <!-- tittle heading -->
-
+        <!--			<h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">-->
+        <!--				<span>S</span>ản-->
+        <!--				<span>P</span>hẩm-->
+        <!--				<span>M</span>ới</h3>-->
         <!-- //tittle heading -->
         <div class="row">
-            <div class="col-lg-5 col-md-8 single-right-left ">
-                <div class="grid images_3_of_2">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <li data-thumb="images/macbook/macbook13/macbook8.1-14.1.jpg">
-                                <div class="thumb-image">
-                                    <img src="images/macbook/macbook13/macbook8.1-14.1.jpg" data-imagezoom="true"
-                                         class="img-fluid" alt=""></div>
-                            </li>
-                            <li data-thumb="images/macbook/macbook13/macbook8.2.jpg">
-                                <div class="thumb-image">
-                                    <img src="images/macbook/macbook13/macbook8.2.jpg" data-imagezoom="true"
-                                         class="img-fluid" alt=""></div>
-                            </li>
-                            <li data-thumb="images/macbook/macbook13/macbook8.3.jpg">
-                                <div class="thumb-image">
-                                    <img src="images/macbook/macbook13/macbook8.3.jpg" data-imagezoom="true"
-                                         class="img-fluid" alt=""></div>
-                            </li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-7 single-right-left simpleCart_shelfItem">
-                <h3 class="mb-3">Macbook Pro 13 inch MV972 8GB/512GB 2019</h3>
-                <p class="mb-3">
-                    <span class="item_price">41.999.000 đ</span>
-                    <!-- <del class="mx-2 font-weight-light">1 đồng </del> -->
-                    <label>Miễn phí vẫn chuyển</label>
-                </p>
-
-                <form>
-                    <div class="single-infoagile">
-                        <form>
-                            <label class="container"> 8GB/512GB
-                                <input type="radio" id="buttonsize1" name="check1" value="">
-                            </label>
-                            <!-- <label class="container">6GB/128GB
-                              <input type="radio" id="buttonsize2" name="check1" value="">
-                          </label> -->
-                        </form>
-                    </div>
-                </form>
-                <div class="product-single-w3l">
-                    <aside class="product-single-w3l1">
-                        <b>
-                            <i>
-                                Khuyến mãi
-                            </i>
-                        </b>
-
-                        <ul>
-                            <li class="mb-1">
-                                Pin sạc dự phòng giảm 30% khi mua kèm.
-                            </li>
-                            <li class="mb-1">
-                                GIẢM ngay 500,000đ khi mua Microsoft Home & Student 2019 chỉ còn 1,790,000đ
-                            </li>
-                            <li class="mb-1">
-                                Tặng 800.000₫ mua hàng tại website thành viên
-                            </li>
-                            <!-- <li class="mb-1">
-                                3300 mAh Battery
-                            </li>
-                            <li class="mb-1">
-                                Exynos 7870 Octa Core 1.6GHz Processor
-                            </li> -->
-                        </ul>
-                    </aside>
-                </div>
-
-                <div class="single-infoagile11">
-                    <h5><b><i> Màu sắc</i></b></h5>
-                    <label class="container">Bạc
-                        <input type="radio" checked="checked" name="check2">
-                        <span class="checkmark"></span>
-                    </label>
-                    <!-- <label class="container">Trắng
-                      <input type="radio"  name="check2">
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="container">Xanh
-                      <input type="radio"  name="check2">
-                      <span class="checkmark"></span>
-                    </label> -->
-                </div>
-                <div>
-                    <p class="my-sm-4 my-3">
-                        <i class="fas fa-retweet mr-3"></i>Net banking & Credit/ Debit/ ATM Cards
-                    </p>
-                </div>
-                <div class="occasion-cart">
-                    <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                            <fieldset>
-                                <input type="hidden" name="cmd" value="_cart"/>
-                                <input type="hidden" name="add" value="1"/>
-                                <input type="hidden" name="business" value=" "/>
-                                <input type="hidden" name="item_name" value="Macbook Pro 13 inch MV972 8GB/512GB 2019"/>
-                                <input type="hidden" name="amount" value="41.999.000 đ "/>
-                                <input type="hidden" name="discount_amount" value="1.00"/>
-                                <input type="hidden" name="currency_code" value="USD"/>
-                                <input type="hidden" name="return" value=" "/>
-                                <input type="hidden" name="cancel_return" value=" "/>
-                                <input type="submit" name="submit" value="Thêm vào giở hàng" class="button"/>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-7 col-lg-7 aos-init aos-animate" data-aos="fade-right">
-                <h5><b><i>Mô tả sản phẩm</i></b></h5>
-                <p>Apple vừa rồi đã cập nhật phiên bản máy tính xách tay mạnh mẽ hàng đầu của hãng vào danh sách
-                    những chiếc laptop đáng mua nhất trên thị trường hiện nay. Chiếc Macbook Pro 13 inch MV972 vẫn giữ
-                    nguyên kiểu dáng tương tự những người tiền nhiệm, điểm khác biệt chủ yếu nằm ở phần cứng. Máy được
-                    cập nhật bộ xử lý cùng độ
-                    xung nhịp tăng hơn trước đây. Điều này đồng nghĩa với việc chiếc Macbook Pro 13 inch hứa hẹn sẽ mang
-                    đến hiệu năng tốt hơn, tốc độ
-                    trải nghiệm nhanh hơn cho người dùng. Bàn phím máy bên cạnh đó cũng được Apple chăm chút tỉ mỉ, cho
-                    phép người dùng có thể gõ máy êm, không phát ra tiếng ồn, bộ gõ ổn định hơn.
-                </p> <img src="../images/macbook/macbook13/Macbook12.2.jpg">
-                <p>Macbook Pro 13 inch MV972 2019 – những tính năng nổi bật</p>
-                <p>1. Máy hoạt động với hiệu năng ấn tượng</p>
-                <p>Trang bị trên mình bộ xử lý Intel mới nhất, với bốn lõi thay vì chỉ hai lõi như các thế hệ tiền nhiệm
-                    trước đây. Bộ vi xử lý này cho
-                    tốc độ vô cùng ấn tượng: 2,4GHz, Turbo Boost 4,1GHz, giúp MacBook Pro 2019 có hiệu năng CPU đạt tới
-                    một tầm cao mới, xử lý trơn tru
-                    mọi tác vụ chuyên dụng. Apple tích hợp cho MV972 GPU đồ họa Intel Iris Plus Graphics 655 cấu hình
-                    cực mạnh, với 128MB eDRAM, Macbook
-                    Pro 13 inch MV972 2019 cho khả năng xử lý đồ họa khủng hơn rất nhiều. Mọi thể loại game 3D hay các
-                    tác vụ đồ họa hạng nặng đều sẽ diễn
-                    ra một cách trơn tru, mượt mà và nhanh chóng. Bạn có thể thao tác thoải mái với những ứng dụng hạng
-                    nặng như rending video 3D; tạo hoặc thêm
-                    các hiệu ứng đặc biệt; xử lý các bản nhạc đa phương tiện; lập trình nhiều phần mềm phức tạp; … mọi
-                    thứ đều diễn ra nhanh chóng như ý muốn. </p>
-                <p>2. Hiệu năng cực mạnh của Macbook Pro 13 inch MV9A2</p>
-                <span id="dots">...</span><span id="more">
-                        <p>Macbook Pro nâng máy tính xách tay lên một cấp độ hoàn toàn mới với hiệu năng lực
-                             mạnh mẽ và tính di động linh hoạt mà sản phẩm đạt được. Với bộ xử lý
-                              và bộ nhớ hiệu suất cao, đồ họa tiên tiến, lưu trữ nhanh đã mang đến
-                               nhiều chọn lựa thuật toán để có trải nghiệm hiệu quả hơn.
-
-                            Cụ thể, Macbook Pro 13 inch được tích hợp Bộ xử lý Intel Core i5 lõi
-
-                            đạt tốc độ lên đến 2,8 GHz và hiệu suất đạt 4,7 GHz hỗ trợ bởi công
-                             nghệ Turbo Boost. Chưa hết, Đồ họa Radeon Pro Vega chắc chắn mang
-                             đến nhiều công cụ hỗ trợ cực thông minh cho sản phẩm.
-
-                            Hiệu năng cực mạnh của Macbook Pro 13 inch MV9A2</p>
-
-
-                <!-- phần bị ẩn và hiện ra sau khi nhấn "Xem thêm" -->
-
-                    <img src="../images/macbook/macbook13/macbook12.3.jpg">
-                 <p>  3.  Thunderbolt 3.0 vô cùng mạnh mẽ và linh hoạt</p>
-                       <p>Thunderbolt 3.0 là sự kết hợp giữa băng thông cực cao với tính linh hoạt tối ưu từ tiêu chuẩn công nghiệp USB Type-C,
-                           tạo nên một cổng kết nối tuy phổ biến nhưng thực chất đã được nâng cấp, cùng lúc làm cả việc truyền dữ liệu, sạc và làm
-                            đầu ra video, chỉ trong một cổng duy nhất, thông lượng lên tới 40Gb/giây – tức băng thông nhanh gấp đôi so với Thunderbolt 2.0. Macbook Pro
-                             13 inch MV972 2019 sở hữu tổng cộng bốn cổng Thunderbolt 3.0, với 2 cổng chia đều mỗi bên thân máy, rất thuận tiện cho người dùng nếu bạn muốn
-                              sử dụng mọi cổng kết nối cùng lúc (hiện đã có thể dễ dàng kết nối với cáp hoặc bộ chuyển đổi).</p>
-
-                    </span> </p>
-                <!-- phần nhấn để hiện thị display bị mất -->
-                <a class="mota1-2-button" onclick="myFunction()" id="mota1-2-button">
-                    Xem thêm
-                </a>
-            </div>
-            <div class="col-xl-5 col-lg-5 pt-5 pt-lg-0">
-                <div class="lt-table-box technical-info" id="id_21547" style="margin-top: 0px;">
-                    <div class="header">
-                        <h2 style="font-size: 15px;font-weight: bold;line-height: 50px;">Thông số kỹ thuật</h2>
-                    </div>
-                    <div class="content">
-                        <table id="tskt">
-                            <tbody>
-                            <tr style="display: table-row;">
-                                <td>Màn hình</td>
-                                <td>OLED</td>
-                            </tr>
-
-
-                            <tr style="display: table-row;">
-                                <td>Kích thước màn hình:</td>
-                                <td>13.3 inch</td>
-                            </tr>
-
-
-                            <tr style="display: table-row;">
-                                <td>Hệ điều hành:</td>
-                                <td>MacOS</td>
-                            </tr>
-
-
-                            <tr style="display: table-row;">
-                                <td>C:</td>
-                                <td>Apple A14 Bionic 6 nhân
-                                </td>
-                            </tr>
-
-
-                            <tr style="display: table-row;">
-                                <td>Camera trước</td>
-                                <td>12</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Camera sau:</td>
-                                <td>2 camera 12 MP</td>
-                            </tr>
-
-
-                            <tr style="display: table-row;">
-                                <td>Bộ nhớ:</td>
-                                <td>512 GB</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Ram:</td>
-                                <td>8 GB</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Thẻ SIM</td>
-                                <td> 1 Nano </td>
-                            </tr>
-
-
-                            <tr style="display: table-row;">
-                                <td>Pin:</td>
-                                <td>2227 mAh, có sạc nhanh</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Bảo mật nâng cao</td>
-                                <td>Mở khoá khuôn mặt Face ID</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Tính năng đặc biệt</td>
-                                <td>Kháng nước, kháng bụi</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Radio</td>
-                                <td>Không</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>CPU:</td>
-                                <td>Apple A14 Bionic 6 nhân</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Thiết kế:</td>
-                                <td>Nguyên khối</td>
-                            </tr>
-
-                            <tr style="display: table-row;">
-                                <td>Chất liệu</td>
-                                <td>Khung nhôm và mặt lưng kính cường  </td>
-                            </tr>
-
-                            <!-- <tr style="display: table-row;">
-                    <td>Khe cắm thẻ nhớ</td>
-                    <td>MicroSD  1 TB</td>
-                </tr>
-
-
-                            <tr style="display: table-row;">
-                    <td>Camera sau</td>
-                    <td>Camera chính 64MP<br>Camera góc siêu rộng 12MP<br>2 Camera góc rộng 5MP</td>
-                </tr>
-
-
-                            <tr style="display: table-row;">
-                    <td>Camera trước</td>
-                    <td>32 MP</td>
-                </tr>
-
-
-                            <tr style="display: table-row;">
-                    <td>Quay video</td>
-                    <td>4K 30fps,Full HD 30/240fps</td>
-                </tr>
-
-
-
-
-
-
-
-
-                            <tr style="display: table-row;">
-                    <td>WLAN</td>
-                    <td>Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot</td>
-                </tr>
-
-
-                            <tr style="display: table-row;">
-                    <td>Bluetooth</td>
-                    <td>5.0, A2DP, LE</td>
-                </tr>
-
-
-                            <tr style="display: table-row;">
-                    <td>GPS</td>
-                    <td>A-GPS, GLONASS, GALILEO, BDS</td>
-                </tr>
-
-
-                            <tr style="display: table-row;">
-                    <td>NFC</td>
-                    <td>Yes</td>
-                </tr>
-
-
-
-
-                            <tr style="display: table-row;">
-                    <td>USB</td>
-                    <td>Type C</td>
-                </tr>
-
-
-                            <tr style="display: table-row;">
-                    <td>Cảm biến</td>
-                    <td>Cảm biến vân tay, cảm biến tiệm cận, gia tốc kế, la bàn, con quay hồi chuyển</td>
-                </tr>
-
-
-                            <tr style="display: table-row;">
-                    <td>Pin</td>
-                    <td> 4500 mAh</td>
-                </tr>
-             -->
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-                <!-- <button class="buttontable"><p><b>Xem thêm</b></p></button> -->
-            </div>
-            <div class="fs-dtrt-row clearfix">
-                <div class="fs-dtrt-col fs-dtrt-c1">
-                    <h5>3,6/5</h5>
-                    <ul class="fs-dtrtbig">
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="far fa-star"></i></span></li>
-                        <li><span><i class="far fa-star"></i></span></li>
-                    </ul>
-                    <br>
-                    <p>30 đánh giá </p>
-                </div>
-                <div class="fs-dtrt-col fs-dtrt-c2">
-
-                    <section id="skills" class="skills">
-                        <div class="container">
-
-                            <div class="row skills-content">
-                                <div class="progress">
-                                    <span class="skill">1 sao <i class="val">0%</i></span>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 0%;"></div>
+            <!-- product left -->
+            <div class="agileinfo-ads-display col-lg-9">
+                <div class="wrapper">
+                    <!-- sản phẩm mới -->
+                    <div class="product-sec1 px-sm-4 px-3 py-sm-5  py-3 mb-4">
+                        <h3 class="heading-tittle text-center font-italic">Sản Phẩm Mới Ra Mắt</h3>
+
+                        <div class="row row-center" >
+                            <!--iphone 12 pro max 512gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_12_pro_max/iphone-12-pro-max-den.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone 12 Pro Max 512GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">43.990.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone 12 Pro Max 512GB" />
+                                                    <input type="hidden" name="amount" value="43990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <!--//iphone 12 pro max 512gb-->
 
-                                <div class="progress">
-                                    <span class="skill">2 sao <i class="val">5%</i></span>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 5%;"></div>
+                            <!--iphone 12 pro 256gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_12_pro_max/iphone-12-pro-max-trang.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone 12 Pro 256GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">34.990.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone 12 Pro 256GB" />
+                                                    <input type="hidden" name="amount" value="34990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="progress">
-                                    <span class="skill">3 sao <i class="val">5%</i></span>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 5%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <span class="skill">4 sao <i class="val">10%</i></span>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="10"
-                                             aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
-                                    </div>
-                                </div>
+                            </div>
+                            <!--//iphone 12 pro 256gb-->
 
-                                <div class="progress">
-                                    <span class="skill">5 sao <i class="val">80%</i></span>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="55"
-                                             aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                            <!--iphone 12 128gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_12/iphone-12-xanh-la.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone 12 128GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">26.990.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone 12 128GB" />
+                                                    <input type="hidden" name="amount" value="26990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <!--//iphone 12 128gb-->
 
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_12/iphone-12-do.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone 12 mini 256GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">25.990.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone 12 mini 256GB" />
+                                                    <input type="hidden" name="amount" value="2599000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//iphone 12 256gb-->
+
+                            <!--iphone 12 mini 64gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_12/iphone-12-xanh-la.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone 12 mini 64GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">21.990.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone 12 mini 64GB" />
+                                                    <input type="hidden" name="amount" value="21990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//iphone 12 64gb-->
+
+                            <!--ipad Air 4 2020 Wifi Cellular-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/ipad/iPad_Air_4_2020_Wifi_Cellular/ipad-air-space-blue.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">iPad Air 4 2020 Wifi Cellular</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">21.488.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="ipad Air 4 2020 Wifi Cellular" />
+                                                    <input type="hidden" name="amount" value="21488000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//ipad Air 4 2020 Wifi Cellular-->
+
+                            <!--ipad pro 12.9inch 2020 4g-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/ipad/iPad_Pro_12.9_inch_2020_wifi/ipad-pro-12-9-inch-2020-silver.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">iPad Pro 12.9 inch 2020 4G</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">27.888.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="ipad pro 12.9inch 2020 4g" />
+                                                    <input type="hidden" name="amount" value="27888000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--ipad pro 12.9inch 2020 wifi-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/ipad/iPad_Pro_11_inch_2020_4g_Cellular/ipad-pro-11-inch-2020-silver.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">iPad Pro 12.9 inch 2020 Wifi</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">24.198.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="ipad pro 12.9inch 2020 Wifi cellular" />
+                                                    <input type="hidden" name="amount" value="24.198.000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--mac pro 13inch 1Tb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/macbook/macbook13/macbook5.2.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">Macbook Pro 13 inch MWP82 16GB/1TB 2020</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">45.988.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="Macbook Pro 13 inch MWP82 16GB/1TB 2020" />
+                                                    <input type="hidden" name="amount" value="45.988.000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//mac pro 13inch 1Tb-->
+
+                            <!--Mac pro 13 inch 2020-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/macbook/macbook13/macbook13.2.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">Macbook Pro 13 inch MXK52 8GB/512GB 2020</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">36.188.000<u>đ</u></span>
+                                            <del>37.299.000 đ</del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="Macbook Pro 13 inch MXK52 8GB/512GB 2020" />
+                                                    <input type="hidden" name="amount" value="37.299.000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--mac pro 13 inch 2020-->
+
+                        </div>
+                    </div>
+                    <div class="product-sec1 px-sm-4 px-3 py-sm-5  py-3 mb-4">
+                        <h3 class="heading-tittle text-center font-italic">Sản Phẩm Khuyến Mãi
+                        </h3>
+                        <div class="row row-center" >
+                            <!--iphone Xs 64gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_xs_max/iphone-xs-max-mau-trang.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1 ">
+                                            <a href="../../macbook13.6.html">IPhone Xs 64GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">20.990.000<u>đ</u></span>
+                                            <del>23.000.000<u>đ</u></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone Xs 64GB" />
+                                                    <input type="hidden" name="amount" value="20990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//iphone Xs 64gb-->
+
+                            <!--iphone 8 Plus 64gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_8_plus/iphone-8-plus-lla-bac.jpg" alt="">
+                                        <div class="men-cart-pro">jp
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone 8 Plus 64GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">11.990.000<u>đ</u></span>
+                                            <del>13.000.000<u>đ</u></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone 8 Plus 64GB" />
+                                                    <input type="hidden" name="amount" value="10990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//iphone 8 Plus 64gb-->
+                            <!--iphone 11 pro 64gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_11_pro_max/iphone-11-pro-max-xam.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone 11 Pro 64GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">26.990.000<u>đ</u></span>
+                                            <del>20.000.000<u>đ</u></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone 11 Pro 64GB" />
+                                                    <input type="hidden" name="amount" value="26990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//iphone 11 pro 64gb-->
+
+                            <!--ipad air3 2019 cellular-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/ipad/iPad_Air_3_2019_Cellular/ipad-air-3-grey.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <!--                                        <span class="product-new-top">New</span>-->
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">iPad Air3 2019 Cellular</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">21.490.000<u>đ</u></span>
+                                            <del>23.000.000<u>đ</u></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="ipad Air3 2019 cellular" />
+                                                    <input type="hidden" name="amount" value="29490000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!--ipad Air3 2019 cellular-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/macbook/macbook16/macbook1.1.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">Macbook Pro 13 inch MXK52 8GB/512GB 2020</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">36.188.000<u>đ</u></span>
+                                            <del>37.299.000 đ</del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="Macbook Pro 13 inch MXK52 8GB/512GB 2020" />
+                                                    <input type="hidden" name="amount" value="36.188.000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
-                    </section>
+                    </div>
+                    <!-- //sản phẩm mới -->
+
+                    <!-- san pham gia tot -->
+                    <div class="product-sec1 px-sm-4 px-3 py-sm-5  py-3 mb-4">
+                        <h3 class="heading-tittle text-center font-italic">Điện Thoại Nổi Bật Nhất</h3>
+                        <div class="row row-center">
+                            <!--iphone Xs Max 512gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_xs_max/iphone-xs-max-mau-vang.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">Hot</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone Xs Max 512GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">28.990.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone Xs Max 512GB" />
+                                                    <input type="hidden" name="amount" value="28990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//iphone Xs Max 512gb-->
+
+                            <!--iphone 12 pro max 512gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_12_pro_max/iphone-12-pro-max-den.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone 12 Pro Max 512GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">43.990.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone 12 Pro Max 512GB" />
+                                                    <input type="hidden" name="amount" value="43990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//iphone 12 pro max 512gb-->
+                            <!--iphone Xr 64gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_xr/iphone-xr-mau-trang.jpg " alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">Hot</span>
+
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone Xr 64GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">13.990.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone Xr 64GB" />
+                                                    <input type="hidden" name="amount" value="13990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//iphone Xr 64gb-->
+
+                            <!--iphone 8 Plus 64gb-->
+                            <div class="col-md-4-5 product-men mt-5">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item text-center">
+                                        <img class="img-size-pro" src="../../images/iphone/iphone_8_plus/iphone-8-plus-lla-bac.jpg" alt="">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="../../macbook13.6.html" class="link-product-add-cart">Xem Nhanh</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">Hot</span>
+
+                                    </div>
+                                    <div class="item-info-product text-center border-top mt-4">
+                                        <h4 class="pt-1">
+                                            <a href="../../macbook13.6.html">IPhone 8 Plus 64GB</a>
+                                        </h4>
+                                        <div class="info-product-price my-2">
+                                            <span class="item_price">11.990.000<u>đ</u></span>
+                                            <del></del>
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_name" value="IPhone 8 Plus 64GB" />
+                                                    <input type="hidden" name="amount" value="11990000" />
+                                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                                    <input type="hidden" name="currency_code" value="VND" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Thêm Vào Giỏ Hàng" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//iphone 8 Plus 64gb-->
+                        </div>
+                    </div>
+                    <!-- //san pham gia tot -->
+
                 </div>
-
-
-                <div class="fs-dtrt-col fs-dtrt-c3"><input type="text" id="name-rate" name="name-rate"
-                                                           placeholder="Họ và tên" value="" class="form-control mb">
-                    <input type="text" id="email-rate" name="email_rate" placeholder="Email" value=""
-                           class="form-control">
-                    <textarea class="form-control" id="full_rate" placeholder="Nhập đánh giá và bình luận về sản phẩm "
-                              rows="6" name="full_rate"></textarea>
-                    <input type="button" class="button submitbt" value="Gửi đánh giá" id="submitbt">
-                </div>
-
             </div>
-            <div class="danhgiasanpham">
-                <h5><b><i>Nhận xét từ khách hàng:</i></b></h5>
-                <div class="thongtinkhachhang">
-                    <h6><i>Nguyễn Văn A |</i></h6>
-                    <ul class="fs-dtrtbig">
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="far fa-star"></i></span></li>
-                    </ul>
-                    <p>Chất lượng sản phẩm tốt. Đáng đễ căng nhắc</p>
-                </div>
-                <div class="thongtinkhachhang">
-                    <h6><i>Trần Văn Bành |</i></h6>
-                    <ul class="fs-dtrtbig">
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="fas fa-star"></i></span></li>
-                        <li><span><i class="fas fa-star"></i></span></li>
-                    </ul>
-                    <p>hàng OK, giá ưu đãi. nv nhiệt tình, thủ tục nhanh gọn.</p>
-                </div>
-            </div>
+            <!-- //product left -->
         </div>
     </div>
 </div>
-<!-- //Single Page -->
-
+<!-- //top products -->
 
 <!-- middle section -->
-<!-- <div class="join-w3l1 py-sm-5 py-4">
+<div class="join-w3l1 py-sm-5 py-4">
     <div class="container py-xl-4 py-lg-2">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="join-agile text-left p-4">
-                    <div class="row">
-                        <div class="col-sm-7 offer-name">
-                            <h6>Smooth, Rich & Loud Audio</h6>
-                            <h4 class="mt-2 mb-3">Branded Headphones</h4>
-                            <p>Sale up to 25% off all in store</p>
-                        </div>
-                        <div class="col-sm-5 offerimg-w3l">
-                            <img src="images/off1.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            !-- <div class="col-lg-6 mt-lg-0 mt-5">
-                <div class="join-agile text-left p-4">
-                    <div class="row ">
-                        <div class="col-sm-7 offer-name">
-                            <h6>A Bigger Phone</h6>
-                            <h4 class="mt-2 mb-3">Smart Phones 5</h4>
-                            <p>Free shipping order over $100</p>
-                        </div>
-                        <div class="col-sm-5 offerimg-w3l">
-                            <<img src="images/off2.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+    </div>
+</div>
+<!-- middle section -->
 
-<!-- js-files -->
-<!-- jquery -->
-<script src="../js/jquery-2.2.3.min.js"></script>
-<!-- //jquery -->
+<!-- footer -->
+<%@include file="footer.jsp"%>-->
 
-<!-- nav smooth scroll -->
-<script>
-    $(document).ready(function () {
-        $(".dropdown").hover(
-            function () {
-                $('.dropdown-menu', this).stop(true, true).slideDown("fast");
-                $(this).toggleClass('open');
-            },
-            function () {
-                $('.dropdown-menu', this).stop(true, true).slideUp("fast");
-                $(this).toggleClass('open');
-            }
-        );
-    });
-</script>
-<!-- //nav smooth scroll -->
-
-<!-- popup modal (for location)-->
-<script src="../js/jquery.magnific-popup.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.popup-with-zoom-anim').magnificPopup({
-            type: 'inline',
-            fixedContentPos: false,
-            fixedBgPos: true,
-            overflowY: 'auto',
-            closeBtnInside: true,
-            preloader: false,
-            midClick: true,
-            removalDelay: 300,
-            mainClass: 'my-mfp-zoom-in'
-        });
-
-    });
-</script>
-<!-- //popup modal (for location)-->
-
-<!-- cart-js -->
-<script src="../js/minicart.js"></script>
-<script>
-    paypals.minicarts.render(); //use only unique class names other than paypals.minicarts.Also Replace same class name in css and minicart.min.js
-
-    paypals.minicarts.cart.on('checkout', function (evt) {
-        var items = this.items(),
-            len = items.length,
-            total = 0,
-            i;
-
-        // Count the number of each item in the cart
-        for (i = 0; i < len; i++) {
-            total += items[i].get('quantity');
-        }
-
-        if (total < 3) {
-            alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
-            evt.preventDefault();
-        }
-    });
-</script>
-<!-- //cart-js -->
-
-<!-- password-script -->
-<script>
-    window.onload = function () {
-        document.getElementById("password1").onchange = validatePassword;
-        document.getElementById("password2").onchange = validatePassword;
-    }
-
-    function validatePassword() {
-        var pass2 = document.getElementById("password2").value;
-        var pass1 = document.getElementById("password1").value;
-        if (pass1 != pass2)
-            document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-        else
-            document.getElementById("password2").setCustomValidity('');
-        //empty string means no validation error
-    }
-</script>
-<!-- //password-script -->
-
-<!-- imagezoom -->
-<script src="../js/imagezoom.js"></script>
-<!-- //imagezoom -->
-
-<!-- flexslider -->
-<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen"/>
-
-<script src="../js/jquery.flexslider.js"></script>
-<script>
-    // Can also be used with $(document).ready()
-    $(window).load(function () {
-        $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: "thumbnails"
-        });
-    });
-</script>
-<!-- //FlexSlider-->
-
-<!-- smoothscroll -->
-<script src="../js/SmoothScroll.min.js"></script>
-<!-- //smoothscroll -->
-
-<!-- start-smooth-scrolling -->
-<script src="../js/move-top.js"></script>
-<script src="../js/easing.js"></script>
-<script>
-    jQuery(document).ready(function ($) {
-        $(".scroll").click(function (event) {
-            event.preventDefault();
-
-            $('html,body').animate({
-                scrollTop: $(this.hash).offset().top
-            }, 1000);
-        });
-    });
-</script>
-<!-- //end-smooth-scrolling -->
-
-<!-- smooth-scrolling-of-move-up -->
-<script>
-    $(document).ready(function () {
-        /*
-        var defaults = {
-            containerID: 'toTop', // fading element id
-            containerHoverID: 'toTopHover', // fading element hover id
-            scrollSpeed: 1200,
-            easingType: 'linear'
-        };
-        */
-        $().UItoTop({
-            easingType: 'easeOutQuart'
-        });
-
-    });
-</script>
-<!-- //smooth-scrolling-of-move-up -->
-
-<!-- for bootstrap working -->
-<script src="../js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-<!-- //js-files -->
-<script>
-    // phần xem thêm của  mô tả sản phẩm
-    function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("mota1-2-button");
-
-        if (dots.style.display === "none") {
-            dots.style.display = "inline";
-            btnText.innerHTML = "Xem thêm";
-            moreText.style.display = "none";
-        } else {
-            dots.style.display = "none";
-            btnText.innerHTML = "Thu gọn";
-            moreText.style.display = "inline";
-        }
-    }
-</script>
 
 </body>
 
