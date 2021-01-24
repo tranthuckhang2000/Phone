@@ -34,9 +34,11 @@ public class UpdateSmartphone extends HttpServlet {
         String bo_nho = request.getParameter("bo_nho");
         String ram = request.getParameter("ram");
         String the_sim = request.getParameter("the_sim");
+        System.out.println(the_sim);
         String pin = request.getParameter("pin");
         String mo_ta_1 = request.getParameter("mo_ta_1");
         String mo_ta_2 = request.getParameter("mo_ta_2");
+        System.out.println(mo_ta_2);
         String mo_ta_3 = request.getParameter("mo_ta_3");
         int so_luong = Integer.parseInt(request.getParameter("so_luong"));
         SmartphoneEntity se = new SmartphoneEntity();

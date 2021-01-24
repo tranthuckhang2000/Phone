@@ -87,7 +87,7 @@
 
                     <c:if test="${sessionScope.acc.quyen_truy_cap == 1}">
                         <li class="text-center border-right text-white">
-                            <a href="../../login.html" class="text-white">
+                            <a href="Managent_Product" class="text-white">
                                 <i class="fas fa-sign-in-alt mr-2 color-log"></i>Admin</a>
                         </li>
                     </c:if>

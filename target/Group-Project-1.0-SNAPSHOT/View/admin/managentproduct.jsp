@@ -378,6 +378,7 @@
 </div>
 <!-- // add Modify product -->
 
+
 <!-- ============================================================== -->
 <!-- Main wrapper - style you can find in pages.scss -->
 <!-- ============================================================== -->
@@ -440,8 +441,6 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="white-box">
-                        <h2> Smartphone</h2>
-
                         <div class="checkout-right">
 
                             <div class="table-responsive mg-elm">
@@ -452,7 +451,7 @@
                                         <th>Tên Sản Phẩm</th>
                                         <th>Số Lượng</th>
                                         <th>Giá</th>
-                                        <th>Giá</th>
+                                        <th>Sửa</th>
                                         <th>Xóa</th>
                                     </tr>
                                     </thead>
@@ -480,13 +479,13 @@
 
                                             <td class="invert">
                                                 <div class="rem">
-                                                    <a href="ModifySmartphone?idProduct=${d.masp}"
-                                                       class="text-white">
-                                                        <i style="font-size: 30px" class="fas fa-edit"></i></a>
+                                                    <a href="ModifySmartphone?idProduct=${d.masp}" style = "color: gray">
+                                                        <i style="font-size: 30px" class="fa fa-edit"></i></a>
                                                 </div>
                                             <td class="invert">
                                                 <div class="rem">
-                                                    <div class="close1"></div>
+                                                    <a href="DetailDelete?idProduct=${d.masp}" style = "color: gray">
+                                                        <i style="font-size: 30px" class="fas fa-trash-alt"></i></a>
                                                 </div>
                                         </tr>
                                     </c:forEach>

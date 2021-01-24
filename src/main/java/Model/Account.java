@@ -83,28 +83,30 @@ public class Account {
                 '}';
     }
 
-    public static List<Account> getListAccount() throws SQLException, ClassNotFoundException {
-        List<Account> list = new ArrayList<>();
-        Connection con = ConnectionDB.getConnection();
-        PreparedStatement ps = con.prepareStatement("select * from account");
-        ResultSet rs = ps.executeQuery();
-        while (rs.next()) {
-            Account ac = new Account(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getInt(6));
-            list.add(ac);
-        }
-        return list;
-    }
-
-    public static Account checkAccount(String ten_dang_nhap, String mat_khau) throws SQLException, ClassNotFoundException {
-        Account ac;
-        List<Account> list = getListAccount();
-        for ( Account a : list) {
-            if(a.getTen_dang_nhap().equals(ten_dang_nhap) && a.getMat_khau().equals(mat_khau))
-                return a;
-            break;
-        }
-        return null;
-    }
+//    public List<Account> getListAccount() throws SQLException, ClassNotFoundException {
+//        List<Account> list = new ArrayList<>();
+//        Connection con = ConnectionDB.getConnection();
+//        PreparedStatement ps = con.prepareStatement("select * from account");
+//        ResultSet rs = ps.executeQuery();
+//        while (rs.next()) {
+//            Account ac = new Account(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getInt(6));
+//            list.add(ac);
+//        }
+//        return list;
+//    }
+//
+//
+//
+//    public static Account checkAccount(String ten_dang_nhap, String mat_khau) throws SQLException, ClassNotFoundException {
+//        Account ac;
+//        List<Account> list = getListAccount();
+//        for ( Account a : list) {
+//            if(a.getTen_dang_nhap().equals(ten_dang_nhap) && a.getMat_khau().equals(mat_khau))
+//                return a;
+//            break;
+//        }
+//        return null;
+//    }
 
     public  String optionAccount(String matk){
         String [] array = matk.split("");

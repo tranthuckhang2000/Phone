@@ -95,7 +95,7 @@
         <div class="page-breadcrumb bg-white">
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title text-uppercase font-medium font-14">Chỉnh Sửa Thông </h4>
+                    <h4 class="page-title text-uppercase font-medium font-14">Chỉnh Sửa Thông Tin</h4>
                 </div>
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     <div class="d-md-flex">
@@ -243,7 +243,7 @@
 
                                             <div class="form-group">
                                                 <label class="col-form-label">Thẻ Sim</label>
-                                                <input type="text" class="form-control" value="${d.the_sim}" placeholder=" " name="sim"
+                                                <input type="text" class="form-control" value="${d.the_sim}" placeholder=" " name="the_sim"
                                                        required="">
                                             </div>
 
@@ -261,7 +261,7 @@
 
                                             <div class="form-group">
                                                 <label class="col-form-label">Mô Tả 2</label>
-                                                <input type="area" class="form-control" value="${d.mo_ta_2}" placeholder=" " name="mo_ta-2"
+                                                <input type="area" class="form-control" value="${d.mo_ta_2}" placeholder=" " name="mo_ta_2"
                                                        required="">
                                             </div>
 

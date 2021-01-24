@@ -32,8 +32,33 @@ public class AccountEntity {
 
     }
 
-    public static void main(String[] args) {
+    public static List<Account> getListAccount() throws SQLException, ClassNotFoundException {
+        List<Account> list = new ArrayList<>();
+        Connection con = ConnectionDB.getConnection();
+        PreparedStatement ps = con.prepareStatement("select * from account");
+        ResultSet rs = ps.executeQuery();
+        while (rs.next()) {
+            Account ac = new Account(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getInt(6));
+            list.add(ac);
+        }
+        return list;
+    }
 
+    public Account checkAccount(String ten_dang_nhap, String gmail) throws SQLException, ClassNotFoundException {
+        Account ac;
+        List<Account> list = getListAccount();
+        for ( Account a : list) {
+            if (a.getTen_dang_nhap().equals(ten_dang_nhap) && a.getGmail().equals(gmail)) {
+                return a;
+            }
+        }
+        return null;
+    }
+
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
+//        System.out.println(getListAccount());
 //        System.out.println( login("khang", "khang123"));
+        AccountEntity ae = new AccountEntity();
+        System.out.println(ae.checkAccount("khangj", "khangtran0944@gmail.com"));
     }
 }

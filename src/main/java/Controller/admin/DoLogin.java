@@ -17,26 +17,32 @@ public class DoLogin extends HttpServlet {
         rd.forward(request, response);
     }
 
+
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-            String ten_dang_nhap = request.getParameter("ten_dang_nhap");
+
+        String ten_dang_nhap = request.getParameter("ten_dang_nhap");
         System.out.println(ten_dang_nhap);
-            String mat_khau = request.getParameter("mat_khau");
-            Account ac = null;
-            AccountEntity ae = new AccountEntity();
-            ac = ae.login(ten_dang_nhap, mat_khau);
-            if (ac != null) {
-                HttpSession session = request.getSession();
-                session.setAttribute("acc", ac);
-                session.setMaxInactiveInterval(1000);
-                response.sendRedirect("index.jsp");
+        String mat_khau = request.getParameter("mat_khau");
+        Account ac = null;
+        AccountEntity ae = new AccountEntity();
+        ac = ae.login(ten_dang_nhap, mat_khau);
+        if (ac != null) {
+            HttpSession session = request.getSession();
+            session.setAttribute("acc", ac);
+            session.setMaxInactiveInterval(1000);
+            request.getRequestDispatcher("/").forward(request, response);
 
-            } else {
 
-                request.setAttribute("error", "Bạn đã nhập sai username hoặc password");
-                request.getRequestDispatcher("login").forward(request, response);
+        } else {
 
-            }
+//            request.getRequestDispatcher("login").forward(request, response);
+            response.sendRedirect("login");
+//            rec
+
+        }
+
 
     }
 }
