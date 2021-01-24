@@ -89,13 +89,13 @@
                 <div class="grid images_3_of_2">
                     <div class="flexslider">
                         <ul class="slides">${d.hinh_mo_ta_1}
-                            <li data-thumb="">
+                            <li data-thumb="${d.hinh_mo_ta_1}">
                                 <div class="thumb-image">
-                                    <img src="images/Admin/5G.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
+                                    <img src="${d.hinh_mo_ta_1}" data-imagezoom="true" class="img-fluid" alt=""> </div>
                             </li>
-                            <li data-thumb="images/Admin/5G.jpg">
+                            <li data-thumb="${d.hinh_mo_ta_1}">
                                 <div class="thumb-image">
-                                    <img src="images/Admin/5G.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
+                                    <img src="${d.hinh_mo_ta_1}" data-imagezoom="true" class="img-fluid" alt=""> </div>
                             </li>
                             <li data-thumb="${d.hinh_mo_ta_1}">
                                 <div class="thumb-image">
