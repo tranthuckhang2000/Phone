@@ -3,46 +3,46 @@
 <html lang="zxx">
 
 <head>
-	<title>Đăng Ký</title>
-	<!-- Meta tag Keywords -->
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	<link rel="SHORTcut icon" href="images/favicon.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8" />
-	<meta name="keywords" content="Electro Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
-	/>
-	<script>
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
+    <title>Đăng Ký</title>
+    <!-- Meta tag Keywords -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="SHORTcut icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Electro Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
-	<!-- //Meta tag Keywords -->
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta tag Keywords -->
 
-	<!-- Custom-Files -->
-	<link href="css/web/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- Bootstrap css -->
-	<link href="css/web/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- Main css -->
-	<link rel="stylesheet" href="css/web/fontawesome-all.css">
-	<!-- Font-Awesome-Icons-CSS -->
-	<link href="css/web/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- pop-up-box -->
-	<link href="css/web/menu.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom-Files -->
+    <link href="css/web/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Bootstrap css -->
+    <link href="css/web/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/web/fontawesome-all.css">
+    <!-- Font-Awesome-Icons-CSS -->
+    <link href="css/web/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- pop-up-box -->
+    <link href="css/web/menu.css" rel="stylesheet" type="text/css" media="all" />
     <!-- menu style -->
     <!-- login and register -->
-   
 
-	<!-- //Custom-Files -->
 
-	<!-- web fonts -->
-	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
-	    rel="stylesheet">
-	<!-- //web fonts -->
+    <!-- //Custom-Files -->
+
+    <!-- web fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+    <!-- //web fonts -->
 
 </head>
 
@@ -116,14 +116,14 @@
                     <div class="col-2 top_nav_right text-center mt-sm-0 mt-2">
                         <div class="wthreecartaits wthreecartaits2 cart cart box_1">
                             <a href="checkout.html">
-                            <!-- <form action="#" method="post" class="last"> -->
+                                <!-- <form action="#" method="post" class="last"> -->
                                 <input type="hidden" name="cmd" value="_cart">
                                 <input type="hidden" name="display" value="1">
                                 <button class="btn w3view-cart" type="submit" name="submit" value="">
                                     <i class="fas fa-cart-arrow-down"></i>
                                 </button>
-                            <!-- </form> -->
-                        </a>
+                                <!-- </form> -->
+                            </a>
                         </div>
                     </div>
                     <!-- //cart details -->
@@ -142,7 +142,7 @@
 
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -230,24 +230,24 @@
 <!-- //navigation -->
 
 <!--page-->
-	<div class="services-breadcrumb">
-		<div class="agile_inner_breadcrumb">
-			<div class="container">
-				<ul class="w3_short">
-					<li>
-						<a href="index.html">Trang chủ</a>
-						<i>|</i>
-					</li>
-					<li>Đăng Ký</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+<div class="services-breadcrumb">
+    <div class="agile_inner_breadcrumb">
+        <div class="container">
+            <ul class="w3_short">
+                <li>
+                    <a href="index.html">Trang chủ</a>
+                    <i>|</i>
+                </li>
+                <li>Đăng Ký</li>
+            </ul>
+        </div>
+    </div>
+</div>
 <!--//page-->
-    <div class="login-page">
-        <div class="form">
-          <form class="register-form">
-             <h3>Đăng Ký</h3>
+<div class="login-page">
+    <div class="form">
+        <form class="register-form">
+            <h3>Đăng Ký</h3>
             <input type="text" placeholder="Tên tài khoản"/>
             <input type="password" placeholder="Mật khẩu"/>
             <input type="password" placeholder="Nhập lại mật khẩu"/>
@@ -258,11 +258,11 @@
                 <img class="img-register" src="images/facebook.png"/>
             </div>
             <p class="message">Bạn đã là thành viên ?</p> <a style="color: #d70018" href="login.html">Đăng nhập </a></p>
-          </form>
+        </form>
 
-        </div>
-      </div>
-   <!-- footer -->
+    </div>
+</div>
+<!-- footer -->
 <footer>
     <div class="footer-top-first">
         <div class="container py-md-5 py-sm-4 py-3">
@@ -270,7 +270,7 @@
             <h2 class="footer-top-head-w3l font-weight-bold mb-2 tt" >CellApples</h2>
             <p class="footer-main mb-4"> Cửa hàng chúng tôi chuyên cung cấp những sản phẩm ủa Apple chĩnh hãng với giá cả phải chăng.
                 Chúng tôi cam kết bảo hành cho quý khách khi sản phẩm bị lỗi từ nhà sản xuất.
-                </p>
+            </p>
             <!-- //footer first section -->
             <!-- footer second section -->
             <div class="row w3l-grids-footer border-top border-bottom py-sm-4 py-3">
@@ -428,147 +428,212 @@
     <!-- //footer fourth section (text) -->
 </footer>
 <!-- //footer -->
-	<!-- copyright -->
+<!-- copyright -->
 
-	<!-- //copyright -->
+<!-- //copyright -->
 
-	<!-- js-files -->
-	<!-- jquery -->
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- //jquery -->
+<!-- js-files -->
+<!-- jquery -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<!-- //jquery -->
 
-	<!-- nav smooth scroll -->
-	<script>
-		$(document).ready(function () {
-			$(".dropdown").hover(
-				function () {
-					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
-					$(this).toggleClass('open');
-				},
-				function () {
-					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
-					$(this).toggleClass('open');
-				}
-			);
-		});
-	</script>
-	<!-- //nav smooth scroll -->
+<!-- nav smooth scroll -->
+<script>
+    $(document).ready(function () {
+        $(".dropdown").hover(
+            function () {
+                $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                $(this).toggleClass('open');
+            },
+            function () {
+                $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                $(this).toggleClass('open');
+            }
+        );
+    });
+</script>
+<!-- //nav smooth scroll -->
 
-	<!-- popup modal (for location)-->
-	<script src="js/jquery.magnific-popup.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.popup-with-zoom-anim').magnificPopup({
-				type: 'inline',
-				fixedContentPos: false,
-				fixedBgPos: true,
-				overflowY: 'auto',
-				closeBtnInside: true,
-				preloader: false,
-				midClick: true,
-				removalDelay: 300,
-				mainClass: 'my-mfp-zoom-in'
-			});
+<!-- popup modal (for location)-->
+<script src="js/jquery.magnific-popup.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
 
-		});
-	</script>
-	<!-- //popup modal (for location)-->
+    });
+</script>
+<!-- //popup modal (for location)-->
 
-	<!-- cart-js -->
-	<script src="js/minicart.js"></script>
-	<script>
-		paypals.minicarts.render(); //use only unique class names other than paypals.minicarts.Also Replace same class name in css and minicart.min.js
+<!-- cart-js -->
+<script src="js/minicart.js"></script>
+<script>
+    paypals.minicarts.render(); //use only unique class names other than paypals.minicarts.Also Replace same class name in css and minicart.min.js
 
-		paypals.minicarts.cart.on('checkout', function (evt) {
-			var items = this.items(),
-				len = items.length,
-				total = 0,
-				i;
+    paypals.minicarts.cart.on('checkout', function (evt) {
+        var items = this.items(),
+            len = items.length,
+            total = 0,
+            i;
 
-			// Count the number of each item in the cart
-			for (i = 0; i < len; i++) {
-				total += items[i].get('quantity');
-			}
+        // Count the number of each item in the cart
+        for (i = 0; i < len; i++) {
+            total += items[i].get('quantity');
+        }
 
-			if (total < 3) {
-				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
-				evt.preventDefault();
-			}
-		});
-	</script>
-	<!-- //cart-js -->
+        if (total < 3) {
+            alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+            evt.preventDefault();
+        }
+    });
+</script>
+<!-- //cart-js -->
 
-	<!-- password-script -->
-	<script>
-		window.onload = function () {
-			document.getElementById("password1").onchange = validatePassword;
-			document.getElementById("password2").onchange = validatePassword;
-		}
+<!-- password-script -->
+<script>
+    window.onload = function () {
+        document.getElementById("password1").onchange = validatePassword;
+        document.getElementById("password2").onchange = validatePassword;
+    }
 
-		function validatePassword() {
-			var pass2 = document.getElementById("password2").value;
-			var pass1 = document.getElementById("password1").value;
-			if (pass1 != pass2)
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-			else
-				document.getElementById("password2").setCustomValidity('');
-			//empty string means no validation error
-		}
-	</script>
-	<!-- //password-script -->
-	
-	<!-- scroll seller -->
-	<script src="js/scroll.js"></script>
-	<!-- //scroll seller -->
+    function validatePassword() {
+        var pass2 = document.getElementById("password2").value;
+        var pass1 = document.getElementById("password1").value;
+        if (pass1 != pass2)
+            document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+        else
+            document.getElementById("password2").setCustomValidity('');
+        //empty string means no validation error
+    }
+</script>
+<!-- //password-script -->
 
-	<!-- smoothscroll -->
-	<script src="js/SmoothScroll.min.js"></script>
-	<!-- //smoothscroll -->
+<!-- scroll seller -->
+<script src="js/scroll.js"></script>
+<!-- //scroll seller -->
 
-	<!-- start-smooth-scrolling -->
-	<script src="js/move-top.js"></script>
-	<script src="js/easing.js"></script>
-	<script>
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
+<!-- smoothscroll -->
+<script src="js/SmoothScroll.min.js"></script>
+<!-- //smoothscroll -->
 
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-	<!-- //end-smooth-scrolling -->
+<!-- start-smooth-scrolling -->
+<script src="js/move-top.js"></script>
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
 
-	<!-- smooth-scrolling-of-move-up -->
-	<script>
-		$(document).ready(function () {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+    });
+</script>
+<!-- //end-smooth-scrolling -->
 
-		});
-	</script>
-	<!-- //smooth-scrolling-of-move-up -->
+<!-- smooth-scrolling-of-move-up -->
+<script>
+    $(document).ready(function () {
+        /*
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+        */
+        $().UItoTop({
+            easingType: 'easeOutQuart'
+        });
 
-	<!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
-	<!-- //for bootstrap working -->
-    <!-- //js-files -->
-    <!-- <script>
-        $('.message a').click(function(){
-   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+</script>
+<!-- //smooth-scrolling-of-move-up -->
+
+<!-- for bootstrap working -->
+<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- //js-files -->
+<!-- <script>
+    $('.message a').click(function(){
+$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
-    </script> -->
+</script> -->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var x_timer;
+        $("#name").keyup(function (e) {
+            clearTimeout(x_timer);
+            var user_name = $(this).val();
+            x_timer = setTimeout(function () {
+                check_username_ajax(user_name);
+            }, 1000);
+        });
+
+
+
+        function check_username_ajax(username) {
+            $("#user-result").html('<img src="img/ajax-loader.gif" />');
+            $.post('CheckEmailServlet', {'username': username}, function (data) {
+                $("#user-result").html(data);
+            });
+        }
+
+
+    });
+
+    function trim(str) {
+        var str = str.replace(/^\s+|\s+$/g,"");
+        return str;
+    }
+    function ValidCaptcha(a,b){
+        var a = trim(a);
+        if (a == b){
+            return true;
+        }
+        return false;
+    }
+    function checkform(theform, b){
+        var why = "";
+        var a = theform.input.value;
+        if(a == ""){
+            why += "Security code should not be empty.\n";
+        }
+        if(a != ""){
+            if(!ValidCaptcha(a, b)){
+                why += "Security code did not match.\n";
+            }
+        }
+        if(why != ""){
+            alert(why);
+            return false;
+        }
+    }
+    var a = Math.ceil(Math.random() * 9);
+    var b = Math.ceil(Math.random() * 9);
+    var code = a + b;
+
+</script>
+<script>$('#pass, #confirm_pass').on('keyup', function () {
+    if ($('#pass').val() == $('#confirm_pass').val()) {
+        $('#message').html('Trùng khớp').css('color', 'green');
+    } else
+        $('#message').html('Không trùng khớp').css('color', 'red');
+});
+
+</script>
 </body>
 
 </html>
